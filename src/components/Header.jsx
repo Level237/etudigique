@@ -1,12 +1,12 @@
-
+import logowhite from "../assets/img/logowhite.png"
 
 const Header=()=>{
 
     return (
         <>
-        <header class='border-b py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px]'>
+        <header class='border-b py-4 px-4 sm:px-10 bg-[#121533] font-[sans-serif] min-h-[70px]' style={{ marginBottom:"-2px"}}>
         <div class='flex flex-wrap items-center gap-x-2 max-lg:gap-y-6'>
-          <a href="javascript:void(0)"><img src="https://readymadeui.com/readymadeui.svg" alt="logo" class='w-36' />
+          <a href="javascript:void(0)"><img src={logowhite} alt="logo" className='w-60' />
           </a>
           <button id="toggle" class='lg:hidden ml-auto'>
             <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -19,21 +19,23 @@ const Header=()=>{
             class='lg:!flex lg:ml-14 lg:space-x-5 max-lg:space-y-2 max-lg:hidden max-lg:py-4 max-lg:w-full'>
             <li class='max-lg:border-b max-lg:py-2 px-3'>
               <a href='javascript:void(0)'
-                class='lg:hover:text-[#007bff] text-[#007bff] block font-semibold text-[15px]'>Home</a>
+                class='lg:hover:text-[#ffcc00] text-[#ffff] block font-semibold text-[15px]'>Home</a>
             </li>
             <li class='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
-                class='lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Team</a>
+                class='lg:hover:text-[#ffcc00] text-white block font-semibold text-[15px]'>Team</a>
             </li>
             <li class='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
-                class='lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Feature</a>
+                class='lg:hover:text-[#ffcc00] text-white block font-semibold text-[15px]'>Feature</a>
             </li>
             <li class='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
-                class='lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Blog</a>
+                class='lg:hover:text-[#ffcc00] text-white block font-semibold text-[15px]'>Blog</a>
             </li>
             <li class='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
-                class='lg:hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>About</a>
+                class='lg:hover:text-[#ffcc00] text-white block font-semibold text-[15px]'>About</a>
             </li>
+            
           </ul>
+          
           <div class='flex lg:ml-auto max-lg:w-full'>
             <div
               class='flex xl:w-80 max-xl:w-full bg-gray-100 px-6 py-3 rounded outline outline-transparent focus-within:outline-[#007bff]'>
@@ -53,5 +55,5 @@ const Header=()=>{
     )
 }
 
-export default Header
+export default Header;
 
