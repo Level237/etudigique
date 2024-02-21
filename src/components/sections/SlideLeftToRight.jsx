@@ -14,14 +14,16 @@ const SlideLeftToRight=(props)=>{
           {props.content}
           <div class="divide-y space-y-4 divide-gray-100 divide-gray-800">
             
-            <div class="pt-4 flex gap-4 md:items-center">
+            <div class="md:items-center">
               
-              <Button title="S'inscrire maintenant" icon="" bgColor="#cc3333" color="white"/>
+              <Button title={props.btnTitle} icon={props.btnIcon} bgColor="#cc3333" color="white"/>
             </div> 
           </div>
         </div>
         <div class="md:5/12 lg:w-1/2">
-          <motion.img src={props.image} alt="image" style={{ 
+          <motion.img src={props.image} alt="image" 
+          
+          style={{ 
             objectFit:"cover"
            }} loading="lazy" width=""
            initial={{ 
@@ -35,6 +37,8 @@ const SlideLeftToRight=(props)=>{
             ease:"circInOut"
          }}
            height="" class="w-full"/>
+           
+           
         </div>
       </div>
 

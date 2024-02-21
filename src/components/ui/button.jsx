@@ -17,7 +17,12 @@ const Button=(props)=>{
          }}
         href="#" className={classeBtn}>
                 {props.title}
-                {props.icon ?? null}
+                <div style={{ 
+                    marginLeft:"3px"
+                 }}>
+                    {props.icon ?? null}
+                </div>
+                
             </motion.a>
         </>
     )
