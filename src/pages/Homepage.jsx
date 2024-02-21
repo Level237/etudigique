@@ -1,5 +1,6 @@
 import HeroRoot from "../components/heroes/Hero-root";
 import SchoolSlider from "../components/slider/SchoolSlider";
+import Button from "../components/ui/button";
 
 const Homepage=()=>{
 
@@ -16,6 +17,10 @@ const Homepage=()=>{
         
         </section>
         <SchoolSlider/>
+        <div className="text-center">
+        <Button title="En savoir plus" color="white" bgColor="#cc3333"/>
+        </div>
+        
         </>
     )
 }

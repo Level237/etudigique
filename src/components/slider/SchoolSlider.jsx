@@ -2,8 +2,10 @@ import {Swiper,SwiperSlide} from "swiper/react"
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/free-mode'
+import 'swiper/css/effect-fade';
 import {FreeMode,Pagination} from "swiper/modules"
 import { UniversityImages } from "../../data/constants"
+import {motion} from "framer-motion"
 const SchoolSlider=()=>{
 
     return (
@@ -20,30 +22,42 @@ const SchoolSlider=()=>{
                   }}
                   modules={[
                     FreeMode,
-                    Pagination
+                    Pagination,
                   ]}
                 >
-                    
-                        <div className="grid grid-cols-2 gap-4 px-10 ">
-                            {UniversityImages.map((image)=>(
-                                <div className="relative group" key={image.src}>
-                                    <SwiperSlide className="mb-14">
-                                    <img
-                                    src={image.src}
-                                    alt="university photos"
-                                    className="rounded-md  object-cover"
-                                    />
-                                    <div className="cursor-pointer absolute inset-0 bg-gradient-to-r from-purple-800 via-pink-500 to-purple-800 opacity-0 group-hover:opacity-70">
-                                        <div className="absolute inset-0 flex items-center justify-center cursor-pointer opacity-0 group-hover:opacity-100 transition-all">
-                                            View University
-
-                                        </div>
-                                    </div>
-                                    </SwiperSlide>
-                                </div>
-                            ))}
-                        </div>
-                    
+                     
+                                        
+                                    <section
+                                    >
+                                    {UniversityImages.map((image)=>(
+                               
+                               <SwiperSlide className=" relative mb-14 ">
+                                  
+                                   <motion.img
+                               whileHover={{ 
+                                rotate:"120deg"
+                             }}
+                               src={image.src}
+                               alt="university photos"
+                               className="rounded-md object-cover"
+                               />
+                                 
+                               
+                              <div
+                                   className="cursor-pointer absolute inset-0 bg-gradient-to-r from-[#cc3333] via-[#ffcc00] to-[#cc3333] opacity-0 hover:opacity-70"
+                                   >
+                                       <div className="absolute inset-0 flex items-center justify-center cursor-pointer opacity-0 hover:opacity-100 transition-all">
+                                           View university
+                                       </div>
+                                   </div>
+                              
+                               </SwiperSlide>
+                           
+                       ))}
+                                    </section>
+                           
+                        
+                            
                 </Swiper>
             </div>
         </section>
