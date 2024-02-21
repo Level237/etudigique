@@ -34,11 +34,24 @@ const SchoolSlider=()=>{
                                <SwiperSlide className=" relative mb-14 ">
                                   
                                    <motion.img
-                               whileHover={{ 
-                                rotate:"120deg"
-                             }}
+                                   initial={{ 
+                                    filter:"blur(12px)"
+                                    }}
+                               whileInView={{ 
+                                filter:"blur(0px)"
+                                }}
+                                whileHover={{ 
+                                    rotate:"12deg"
+                                 }}
+                                transition={{ 
+                                    duration:1,
+                                    ease:"circInOut"
+                                 }}
                                src={image.src}
                                alt="university photos"
+                               style={{ 
+                               
+                                }}
                                className="rounded-md object-cover"
                                />
                                  
