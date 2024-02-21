@@ -30,7 +30,7 @@ const HeroRoot=()=>{
         position:"absolute",
         left: 0,
         right:0,
-        height: "100vh",
+        height: "120vh",
         display: "flex",
         zIndex: -1,
         transform: "rotate(-180deg)",
