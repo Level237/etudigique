@@ -8,7 +8,7 @@ const SlideLeftToRight=(props)=>{
    <div class="space-y-6 justify-between text-gray-600 md:flex flex-row-reverse md:gap-6 md:space-y-0 lg:gap-12 lg:items-center">
        
         <div class="md:7/12 lg:w-1/2">
-          <h2 class="text-3xl font-bold text-gray-900 md:text-4xl text-white">
+          <h2 class="text-3xl font-bold text-gray-900 md:text-4xl">
           {props.title}
           </h2>
           {props.content}

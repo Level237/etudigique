@@ -1,8 +1,9 @@
 import hero from "../../assets/img/hero.png"
 import boss from "../../assets/img/boss.jpg"
-import Wave from "react-wavify"
+
 import Button from "../ui/button"
 import campus from "../../assets/img/campus.jpg"
+import OwnWave from "../Wave"
 
 
 const HeroRoot=()=>{
@@ -26,29 +27,7 @@ const HeroRoot=()=>{
             <img src={campus} className="w-20" style={{ width:"70vw",borderRadius:"30%",objectFit:"cover",height:"75vh" }} alt="mockup"/>
         </div>
     </div>
-    <div  style={{ 
-        position:"absolute",
-        left: 0,
-        right:0,
-        height: "125vh",
-        display: "flex",
-        zIndex: -1,
-        transform: "rotate(-180deg)",
-     }}>
-        <Wave
-          fill="#ffcc00"
-          paused={false}
-          opacity="0.70"
-          options={{
-            height: 80,
-            amplitude: 10,
-            speed: 0.2,
-            points: 18,
-            
-          }}
-        />
-      
-    </div>
+    <OwnWave color="#ffcc00" deg="-180"/>
     
 </section>
         </>

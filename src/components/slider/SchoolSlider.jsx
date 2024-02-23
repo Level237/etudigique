@@ -56,13 +56,14 @@ const SchoolSlider=()=>{
                                />
                                  
                                
-                              <div
+                              <motion.div
+                            
                                    className="cursor-pointer absolute inset-0 bg-gradient-to-r from-[#cc3333] via-[#ffcc00] to-[#cc3333] opacity-0 hover:opacity-70"
                                    >
                                        <div className="absolute inset-0 flex items-center justify-center cursor-pointer opacity-0 hover:opacity-100 transition-all">
                                            View university
                                        </div>
-                                   </div>
+                                   </motion.div>
                               
                                </SwiperSlide>
                            
