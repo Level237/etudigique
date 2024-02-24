@@ -28,7 +28,7 @@ const HeroRoot=()=>{
         </div>
     </div>
     <OwnWave color="#ffcc00" amplitude="10" point="18"   deg="-180" paused={false} opacity="0.7"/>
-    
+    https://lottie.host/93f46e6b-8aad-413c-9373-657992c5dc70/xeDT6PVB03.json
 </section>
         </>
     )
