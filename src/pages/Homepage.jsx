@@ -54,7 +54,8 @@ const Homepage=()=>{
          </section>
          <section style={{ 
        
-        marginTop:"-80px"
+        marginTop:"-80px",
+        paddingBottom:"70px"
          }} className="bg-[#0000000a]">
         <div id="features" >
        
@@ -144,10 +145,15 @@ const Homepage=()=>{
         </div>
       </motion.div>
       
+      
     </div>
+    <div className="flex justify-center align-center text-center mb-5 mt-[-70px]">
+      <Button title="contactez-nous" color="white"  bgColor="#000000"/>
+      </div>
 </div>
 </div>
         </section>
+        
         </section>
        
         </>

@@ -27,7 +27,7 @@ const HeroRoot=()=>{
             <img src={campus} className="w-20" style={{ width:"70vw",borderRadius:"30%",objectFit:"cover",height:"75vh" }} alt="mockup"/>
         </div>
     </div>
-    <OwnWave color="#ffcc00" deg="-180"/>
+    <OwnWave color="#ffcc00" amplitude="10" point="18"   deg="-180" paused={false} opacity="0.7"/>
     
 </section>
         </>

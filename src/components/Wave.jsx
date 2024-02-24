@@ -1,6 +1,7 @@
 import Wave from "react-wavify"
 const OwnWave=(props)=>{
 
+ 
     return (
         <>
         <div  style={{ 
@@ -14,13 +15,13 @@ const OwnWave=(props)=>{
      }}>
         <Wave
           fill={props.color}
-          paused={false}
-          opacity="0.70"
+          paused={props.paused}
+          opacity={props.opacity}
           options={{
             height: 80,
-            amplitude: 10,
+            amplitude: props.amplitude,
             speed: 0.2,
-            points: 18,
+            points: props.point,
             
           }}
         />
