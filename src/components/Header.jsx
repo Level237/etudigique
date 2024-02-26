@@ -7,8 +7,8 @@ const Header=()=>{
         <>
         <header class='border-b py-4 px-4 sm:px-10 bg-[#121533] font-[sans-serif] min-h-[70px]' style={{ marginBottom:"-2px"}}>
         <div class='flex flex-wrap items-center gap-x-2 max-lg:gap-y-6'>
-          <a href="javascript:void(0)"><img src={logowhite} alt="logo" className='w-60' />
-          </a>
+          <Link to="" href="javascript:void(0)"><img src={logowhite} alt="logo" className='w-60' />
+          </Link>
           <button id="toggle" class='lg:hidden ml-auto'>
             <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd"
@@ -22,7 +22,7 @@ const Header=()=>{
               <a href='javascript:void(0)'
                 class='lg:hover:text-[#ffcc00] text-[#ffff] block font-semibold text-[15px]'>Nos Services</a>
                 <div style={{ position:"absolute",width:"9%",height:"5%",background:"red",opacity:"0" }}></div>
-               <ul class="mt-5 p-[12px] absolute hidden border-t-[#ffcc00] border-t-[10px] transition-all group-hover:block bg-white border  shadow-md">
+               <ul className="z-30 mt-5 p-[12px] absolute hidden border-t-[#ffcc00] border-t-[10px] transition-all group-hover:block bg-white border  shadow-md">
         <li className="mt-3"><Link to="equivalence-de-diplome" class="block py-1 px-2 hover:bg-[#ffcc008c]">Equivalence de diplome</Link></li>
         <li className="mt-3"><a href="#" class="block py-1 px-2 hover:bg-[#ffcc008c]">Admission</a></li>
         <li className="mt-3"><a href="#" class="block py-1 px-2 hover:bg-[#ffcc008c]">Campus belgique</a></li>
