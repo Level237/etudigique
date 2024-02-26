@@ -8,14 +8,21 @@ import animationDataCircle from "../../src/assets/loties/gradient"
 import animationData from "../../src/assets/loties/student"
 import Lottie from "lottie-web"
 import boss from "../../src/assets/img/boss.jpg"
-import {motion} from "framer-motion"
-import {  useEffect, useRef } from "react";
+import {motion,useInView} from "framer-motion"
+import {  useEffect, useRef, useState } from "react";
 import Circle from "../components/Circle";
-import OwnWave from "../components/Wave";
+
+
+
 const Homepage=()=>{
   let container = useRef(null); 
   let containerCircle=useRef(null)
-   
+  const viewRef=useRef(null)
+  const isInView=useInView(viewRef,{
+    once:true
+  })
+  console.log(isInView);
+  const [viewAnimation,setViewAnimation]=useState(null)
     useEffect(()=>{
       Lottie.loadAnimation({
         animationData: animationData,
@@ -54,7 +61,7 @@ const Homepage=()=>{
         <section>
             <SchoolSlider/>
             <div className="text-center">
-            <Button  title="En savoir plus" color="white" bgColor="#cc3333"/>
+            <Button  title="En savoir plus" color="white" type="secondary"/>
             </div>
         </section>
          <section className=" relative flex justify-center mb-20 bg-[#0000000a]" style={{ 
@@ -130,7 +137,8 @@ const Homepage=()=>{
        whileInView={{ 
         y:0,
         opacity:1
-        }}  class=" p-3 relative rounded-3xl   bg-[#cc3333] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+        }}
+        ref={viewRef}  class=" p-3 relative rounded-3xl   bg-[#cc3333] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
         <div class="relative space-y-8 py-12 p-8">
           <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" class="w-12" width="512" height="512" alt="burger illustration"/>
 
@@ -154,6 +162,7 @@ const Homepage=()=>{
         y:0,
         opacity:1
         }}
+        ref={viewRef}
        class="group relative  rounded-3xl  bg-[#cc3333] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
         <div class="relative space-y-8 py-12 p-8">
           <img src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png" class="w-12" width="512" height="512" alt="burger illustration"/>
@@ -178,7 +187,7 @@ const Homepage=()=>{
         y:0,
         opacity:1
         }}
-      
+        ref={viewRef}
       style={{ 
         
        }} class="group relative rounded-3xl  bg-[#cc3333] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">

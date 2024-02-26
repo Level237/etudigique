@@ -16,7 +16,7 @@ const SlideLeftToRight=(props)=>{
             
             <div class="md:items-center">
               
-              <Button title={props.btnTitle} icon={props.btnIcon} bgColor="#cc3333" color="white"/>
+              <Button title={props.btnTitle} icon={props.btnIcon} type="secondary" color="white"/>
             </div> 
           </div>
         </div>

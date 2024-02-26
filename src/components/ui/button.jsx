@@ -2,10 +2,16 @@ import {motion} from "framer-motion"
 
 const Button=(props)=>{
 
-    const bgBtn=`bg-[${props.bgColor}]`
-    const btnPrimary= `text-${props.color}`
-    console.log(bgBtn);
-    const classeBtn="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center   rounded-lg   focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 " + bgBtn + " " + btnPrimary
+    let bgBtn="#000000"
+    let colorBtn=""
+  if(props.type==="primary"){
+    bgBtn="#ffcc00"
+    colorBtn="black"
+  }else if(props.type==="secondary"){
+    bgBtn="#cc3333"
+    colorBtn="white"
+  }
+    let classeBtn=`inline-flex items-center bg-[${bgBtn}] text-${colorBtn} justify-center px-5 py-3 mr-3 text-base font-medium text-center   rounded-lg   focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 `
     return (
         <>
         <motion.a 
