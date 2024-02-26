@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logowhite from "../assets/img/logowhite.png"
 
 const Header=()=>{
@@ -22,7 +23,7 @@ const Header=()=>{
                 class='lg:hover:text-[#ffcc00] text-[#ffff] block font-semibold text-[15px]'>Nos Services</a>
                 <div style={{ position:"absolute",width:"9%",height:"5%",background:"red",opacity:"0" }}></div>
                <ul class="mt-5 p-[12px] absolute hidden border-t-[#ffcc00] border-t-[10px] transition-all group-hover:block bg-white border  shadow-md">
-        <li className="mt-3"><a href="#" class="block py-1 px-2 hover:bg-[#ffcc008c]">Equivalence de diplome</a></li>
+        <li className="mt-3"><Link to="equivalence-de-diplome" class="block py-1 px-2 hover:bg-[#ffcc008c]">Equivalence de diplome</Link></li>
         <li className="mt-3"><a href="#" class="block py-1 px-2 hover:bg-[#ffcc008c]">Admission</a></li>
         <li className="mt-3"><a href="#" class="block py-1 px-2 hover:bg-[#ffcc008c]">Campus belgique</a></li>
         <li className="mt-3"><a href="#" class="block py-1 px-2 hover:bg-[#ffcc008c]">Demande de Visa</a></li>
