@@ -19,20 +19,18 @@ const Header=()=>{
             class='lg:!flex lg:ml-14 lg:space-x-5 max-lg:space-y-2 max-lg:hidden max-lg:py-4 max-lg:w-full'>
             <li class='max-lg:border-b max-lg:py-2 px-3'>
               <a href='javascript:void(0)'
-                class='lg:hover:text-[#ffcc00] text-[#ffff] block font-semibold text-[15px]'>Home</a>
+                class='lg:hover:text-[#ffcc00] text-[#ffff] block font-semibold text-[15px]'>Nos Services</a>
             </li>
             <li class='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
-                class='lg:hover:text-[#ffcc00] text-white block font-semibold text-[15px]'>Team</a>
+                class='lg:hover:text-[#ffcc00] text-white block font-semibold text-[15px]'>A Propos de nous</a>
             </li>
             <li class='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
-                class='lg:hover:text-[#ffcc00] text-white block font-semibold text-[15px]'>Feature</a>
+                class='lg:hover:text-[#ffcc00] text-white block font-semibold text-[15px]'>Contact</a>
             </li>
             <li class='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
                 class='lg:hover:text-[#ffcc00] text-white block font-semibold text-[15px]'>Blog</a>
             </li>
-            <li class='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
-                class='lg:hover:text-[#ffcc00] text-white block font-semibold text-[15px]'>About</a>
-            </li>
+            
             
           </ul>
           
