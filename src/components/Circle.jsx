@@ -11,6 +11,7 @@ const Circle=(props)=>{
             opacity:props.opacity,
             borderRadius:"100%",
             translate:"0deg",
+            zIndex:-12,
             right:props.right ?? null,
             left:props.left ?? null,
             top:props.top ?? null           }}/>
