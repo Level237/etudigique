@@ -5,7 +5,7 @@ const Header=()=>{
 
     return (
         <>
-        <header class='border-b py-4 px-4 sm:px-10 bg-[#121533] font-[sans-serif] min-h-[70px]' style={{ marginBottom:"-2px"}}>
+        <header class='sticky top-0 z-50  py-4 px-4 sm:px-10 bg-[#121533] font-[sans-serif] min-h-[70px]' style={{ marginBottom:"-2px"}}>
         <div class='flex flex-wrap items-center gap-x-2 max-lg:gap-y-6'>
           <Link to="" href="javascript:void(0)"><img src={logowhite} alt="logo" className='w-60' />
           </Link>
@@ -21,9 +21,9 @@ const Header=()=>{
             <li class=' group max-lg:border-b max-lg:py-2 px-3'>
               <a href='javascript:void(0)'
                 class='lg:hover:text-[#ffcc00] text-[#ffff] block font-semibold text-[15px]'>Nos Services</a>
-                <div style={{ position:"absolute",width:"9%",height:"5%",background:"red",opacity:"0" }}></div>
+                <div style={{ position:"absolute",width:"9%",height:"45%",background:"red",opacity:"0",zIndex:"900" }}></div>
                <ul className="z-30 mt-5 p-[12px] absolute hidden border-t-[#ffcc00] border-t-[10px] transition-all group-hover:block bg-white border  shadow-md">
-        <li className="mt-3"><Link to="equivalence-de-diplome" class="block py-1 px-2 hover:bg-[#ffcc008c]">Equivalence de diplome</Link></li>
+        <li className="mt-3"><Link to="equivalence-de-diplome" title="Equivalence de Diplome" class="block py-1 px-2 hover:bg-[#ffcc008c]">Equivalence de diplome</Link></li>
         <li className="mt-3"><a href="#" class="block py-1 px-2 hover:bg-[#ffcc008c]">Admission</a></li>
         <li className="mt-3"><a href="#" class="block py-1 px-2 hover:bg-[#ffcc008c]">Campus belgique</a></li>
         <li className="mt-3"><a href="#" class="block py-1 px-2 hover:bg-[#ffcc008c]">Demande de Visa</a></li>

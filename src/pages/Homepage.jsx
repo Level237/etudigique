@@ -14,16 +14,17 @@ import Circle from "../components/Circle";
 
 
 
-const Homepage=()=>{
+const Homepage=(props)=>{
   let container = useRef(null); 
   let containerCircle=useRef(null)
   const viewRef=useRef(null)
   const isInView=useInView(viewRef,{
     once:true
   })
-  console.log(isInView);
+  
   const [viewAnimation,setViewAnimation]=useState(null)
     useEffect(()=>{
+      document.title=props.title
       Lottie.loadAnimation({
         animationData: animationData,
         autoplay: true,
@@ -235,8 +236,8 @@ const Homepage=()=>{
           Plus de 10 nouveaux étudiants rejoignent Etudigique pour l'obtention de leur visa étudiant
         </p>
         <div class="flex flex-wrap justify-center gap-6">
-        <Button title="Rejoignez nous" bgColor="#ffcc00"  color="black" />
-        <Button title="Témoignages" bgColor="#000000"  color="black"  />
+        <Button title="Rejoignez nous" type="primary"  color="black" />
+        <Button title="Témoignages" type='default'  color="black"  />
          
         </div>
       </div>
