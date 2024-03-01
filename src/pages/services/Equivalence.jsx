@@ -6,6 +6,7 @@ import img3 from "../../assets/img/equivalence/equivalence3.jpg"
 import img4 from "../../assets/img/equivalence/equivalence4.jpg"
 import img5 from "../../assets/img/equivalence/equivalence5.jpg"
 import img6 from "../../assets/img/equivalence/equivalence6.jpg"
+import about from "../../assets/img/equivalence/about.png"
 import Button from "../../components/ui/button";
 import Circle from "../../components/Circle";
 
@@ -38,8 +39,8 @@ const Equivalence=(props)=>{
       </div>
       <div className="grid grid-cols-4 gap-5">
         <div className="flex flex-col">
-        <img className="w-60 rounded-s-3xl rounded-e-3xl" src={img2}/>
-        <img className="w-60 mt-8 rounded-s-3xl rounded-e-3xl" src={img3}/>
+        <img className="w-60 rounded-s-3xl rounded-e-3xl" src={img2} alt="obtention de diplome"/>
+        <img className="w-60 mt-8 rounded-s-3xl rounded-e-3xl" src={img3} alt=""/>
         </div>
       
       <img className="w-60 rounded-s-3xl rounded-e-3xl" src={img4}/>
@@ -56,8 +57,17 @@ const Equivalence=(props)=>{
       <Button type="secondary" title="Passez un entretien"/>
     </div>
         </section>
-        <section className="flex items-center bg-[#121533] h-[200px]" >
-
+        <section className="flex  px-[100px] justify-center bg-[#cc3333] p-[20px]" >
+        
+          <div style={{ width:"45vh" }} className="mb-[-20px]">
+          <img className="w-[100%] mt-8 rounded-s-3xl rounded-e-3xl" src={about} alt=""/>
+          </div>
+          
+          <div style={{ flex:1 }}>
+          <h2 class="my-8 text-2xl font-bold  text-white md:text-4xl">
+          Notre expertise en matière d'équivalence de diplôme
+      </h2>
+          </div>
         </section>
         </section>
         
