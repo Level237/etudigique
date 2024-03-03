@@ -25,7 +25,7 @@ const Header=()=>{
                <ul className="z-30 mt-5 p-[12px] absolute hidden border-t-[#ffcc00] border-t-[10px] transition-all group-hover:block bg-white border  shadow-md">
         <li className="mt-3"><Link to="equivalence-de-diplome" title="Equivalence de Diplome" class="block py-1 px-2 hover:bg-[#ffcc008c]">Equivalence de diplome</Link></li>
         <li className="mt-3"><Link to="admission" class="block py-1 px-2 hover:bg-[#ffcc008c]">Admission</Link></li>
-        <li className="mt-3"><a href="#" class="block py-1 px-2 hover:bg-[#ffcc008c]">Campus belgique</a></li>
+        <li className="mt-3"><Link to="campus-belgique" class="block py-1 px-2 hover:bg-[#ffcc008c]">Campus belgique</Link></li>
         <li className="mt-3"><a href="#" class="block py-1 px-2 hover:bg-[#ffcc008c]">Demande de Visa</a></li>
       </ul>
             </li>
