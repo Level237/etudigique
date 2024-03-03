@@ -17,7 +17,7 @@ const Equivalence=(props)=>{
   },[])
     return (
         <>
-        <section className="mb-[400px] bg-[#0000000a]">
+        <section className=" bg-[#0000000a]">
         <ServiceSlide title="Equivalence de Diplome"/>
        
         <section className=" relative mt-5 p-10">
@@ -57,7 +57,7 @@ const Equivalence=(props)=>{
       <Button type="secondary" title="Passez un entretien"/>
     </div>
         </section>
-        <section className=" px-[100px] py-[48px] justify-center bg-[#cc3333] p-[20px]" >
+        <section className=" px-[100px] py-[58px] justify-center bg-[#cc3333] p-[20px]" >
         <div className="flex">
         <div style={{ width:"50vh" }} className="mb-[-60px]">
           <img className="w-[100%] mt-8 rounded-s-3xl rounded-e-3xl" src={about} alt=""/>
@@ -65,9 +65,9 @@ const Equivalence=(props)=>{
           
           <div className="flex flex-col" style={{ flex:1 }}>
           <h2 class="my-8 text-2xl font-bold  text-white md:text-4xl">
-          Notre expertise en matière d'équivalence de diplôme
+          Etudigigue vous accompagne dans toutes vos démarches
       </h2>
-      <div class="divide-y grid grid-cols-2 space-y-4 divide-gray-100 dark:divide-gray-800">
+      <div class="grid grid-cols-2 space-y-4 divide-gray-100 dark:divide-gray-800">
             <div class="mt-8 flex gap-4 md:items-center">
               <div class="w-12 h-12 flex gap-4 rounded-full bg-[#ffcc3321]">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 m-auto text-[#ffcc33]">
@@ -75,8 +75,8 @@ const Equivalence=(props)=>{
                 </svg>        
               </div>
               <div class="w-5/6">
-                <h3 class="font-semibold text-lg  text-[#ffcc33]">Évaluation gratuite de votre situation et de vos besoins.</h3>
-                <p class="text-white">Asperiores nemo possimus nesciunt quam mollitia.</p>
+                <h3 class="font-semibold text-lg  text-[#ffcc33]">Collecte des documents nécessaires</h3>
+                <p class="text-white">Nous vous guidons dans la recherche et la traduction des documents requis pour votre demande d'équivalence.</p>
               </div> 
             </div> 
             <div class="pt-4 flex gap-4 md:items-center">
@@ -86,8 +86,8 @@ const Equivalence=(props)=>{
                 </svg>                                      
               </div>
               <div class="w-5/6">
-                <h3 class="font-semibold text-lg text-[#ffcc33]">Constitution et vérification de votre dossier de demande.</h3>
-                <p class="text-white">Asperiores nemo possimus nesciunt quam mollitia.</p>
+                <h3 class="font-semibold text-lg text-[#ffcc33]">Remplissage du formulaire de demande</h3>
+                <p class="text-white">Nous vous assistons dans la complétion du formulaire et veillons à ce qu'il soit correctement rempli.</p>
               </div> 
             </div> 
             <div class="pt-4 flex gap-4 md:items-center">
@@ -97,8 +97,8 @@ const Equivalence=(props)=>{
                 </svg>                                      
               </div>
               <div class="w-5/6">
-                <h3 class="font-semibold text-lg text-[#ffcc33]">Conseils personnalisés pour maximiser vos chances de succès.</h3>
-                <p class="text-white">Asperiores nemo possimus nesciunt quam mollitia.</p>
+                <h3 class="font-semibold text-lg text-[#ffcc33]">Dépôt de la demande</h3>
+                <p class="text-white">Nous nous chargeons de déposer votre demande auprès des autorités compétentes et de suivre son avancement.</p>
               </div> 
             </div> 
             <div class="pt-4 flex gap-4 md:items-center">
@@ -108,8 +108,8 @@ const Equivalence=(props)=>{
                 </svg>                                      
               </div>
               <div class="w-5/6">
-                <h3 class="font-semibold text-lg text-[#ffcc33]">Mise en relation avec les autorités compétentes.</h3>
-                <p class="text-white">Asperiores nemo possimus nesciunt quam mollitia.</p>
+                <h3 class="font-semibold text-lg text-[#ffcc33]">Obtention de l'équivalence</h3>
+                <p class="text-white">Nous vous informons de la décision des autorités et vous assistons dans les démarches ultérieures.</p>
               </div> 
             </div>
           </div>
@@ -118,8 +118,78 @@ const Equivalence=(props)=>{
           
           
         </section>
-        <section>
+        <section className="mt-20 flex items-center justify-center">
           
+          <h2 className="text-center text-xl font-bold  text-black md:text-4xl">Pourquoi choisir<br/> Etudigigue pour l'équivalence de votre diplôme?</h2>
+         
+        </section>
+        <section style={{ 
+       
+       marginLeft:"80px",
+       marginRight:"80px",
+       paddingBottom:"120px",
+       
+        }}>
+        <div class="mt-16 grid   divide-x gap-4 div divide-gray-100 divide-[#cc3333]  overflow-hidden  text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
+      <div   class=" p-3 relative rounded-3xl   bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+        <div class="relative space-y-8 py-12 p-8">
+          
+
+          <div class="space-y-5">
+            <h5 class="text-xl text-center font-semibold text-gray-700  transition group-hover:text-secondary">
+            Gain de temps et d'énergie
+            </h5>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div
+      
+       class="group relative  rounded-3xl  bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl">
+        <div class="relative space-y-8 py-12 p-8">
+          
+
+          <div class="space-y-2">
+            <h5 class="text-xl text-center font-semibold text-gray-700  transition group-hover:text-secondary">
+            Réduction du stress et des démarches administratives
+            </h5>
+            
+          </div>
+        
+        </div>
+      </div>
+      <div 
+      class="group relative rounded-3xl  bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+        <div class="relative space-y-8 py-12 p-8">
+          
+
+          <div class="space-y-2">
+            <h5 class="text-xl text-center font-semibold text-gray-700 transition group-hover:text-secondary">
+            Confiance et tranquillité d'esprit 
+            </h5>
+           
+          </div>
+         
+        </div>
+      </div>
+      <div 
+      class="group relative rounded-3xl  bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+        <div class="relative space-y-8 py-12 p-8">
+          
+
+          <div class="space-y-2 flex justify-center items-center">
+            <h5 class="text-xl text-center font-semibold text-gray-700  transition group-hover:text-secondary">
+            Taux de réussite<br/> élevé
+            </h5>
+           
+          </div>
+         
+        </div>
+      </div>
+      
+    </div>
+  
         </section>
         </section>
         
