@@ -18,7 +18,7 @@ const Equivalence=(props)=>{
     return (
         <>
         <section className=" bg-[#0000000a]">
-        <ServiceSlide title="Equivalence de Diplome"/>
+        <ServiceSlide title="Equivalence de Diplome" image={"assets/img/equivalence.jpg"}/>
        
         <section className=" relative mt-5 p-10">
           

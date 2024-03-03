@@ -1,13 +1,14 @@
-import img1 from "../../assets/img/equivalence/equivalence1.jpg"
-import img2 from "../../assets/img/equivalence/equivalence2.jpg"
-import img3 from "../../assets/img/equivalence/equivalence3.jpg"
-import img4 from "../../assets/img/equivalence/equivalence4.jpg"
-import img5 from "../../assets/img/equivalence/equivalence5.jpg"
-import img6 from "../../assets/img/equivalence/equivalence6.jpg"
+
+import img2 from "../../assets/img/admission/admission1.jpg"
+import img3 from "../../assets/img/admission/admission2.jpg"
+import img4 from "../../assets/img/admission/admission3.jpg"
+import img1 from "../../assets/img/admission/admission5.jpg"
+import img5 from "../../assets/img/admission/admission6.jpg"
+import img6 from "../../assets/img/admission/admission7.jpg"
 import Circle from "../../components/Circle"
 import ServiceSlide from "../../components/sections/ServiceSlide"
 import Button from "../../components/ui/button"
-import about from "../../assets/img/equivalence/about.png"
+import about from "../../assets/img/admission.png"
 import { useEffect } from "react"
 
 const Admission=(props)=>{
@@ -18,8 +19,17 @@ const Admission=(props)=>{
     return (
         <>
         <section className=" bg-[#0000000a]">
-        <ServiceSlide title="Admission"/>
-       
+        <section className={`relative h-[50vh] bg-center bg-cover bg-[url('assets/img/admission/admission.jpg')] `}>
+        <div className="flex items-center justify-center absolute inset-0 bg-[#ffcc00] w-100 opacity-[0.7]">
+          
+        </div>
+        <div className="absolute inset-0 flex items-center justify-center">
+        <h2 className="text-5xl font-bold text-white"> Admission</h2>
+        </div>
+        </section>
+       <section className="h-10 bg-[#cc3333]">
+
+        </section>
         <section className=" relative mt-5 p-10">
           
         <div class=" flex flex-col items-center justify-center ">
@@ -28,10 +38,10 @@ const Admission=(props)=>{
         <path fill-rule="evenodd" d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z" clip-rule="evenodd"></path>
       </svg>
       
-      <h2 class="my-8 text-2xl font-bold flex items-center justify-center  text-black md:text-4xl text-center">
-      Etudigigue vous facilite la vie !
+      <h2 class="my-8 mx-[34px] text-2xl font-bold flex items-center justify-center  text-black md:text-4xl text-center">
+      Admission dans une université belge : Etudigigue<br/> vous ouvre les portes !
       </h2>
-      <p class=" text-gray-600 md:w-2/3 lg:w-3/7">Obtenir l'équivalence de votre diplôme est une étape indispensable pour poursuivre vos études en Belgique. Cette procédure peut s'avérer complexe et fastidieuse, mais Etudigigue est là pour vous simplifier la vie !</p>
+      <p class=" text-gray-600 md:w-2/3 lg:w-3/7">Etudier en Belgique est un rêve pour de nombreux étudiants. Avec ses universités de renommée internationale, son système éducatif de qualité et son cadre de vie agréable, la Belgique attire chaque année des milliers d'étudiants du monde entier.</p>
     </div>
     <div className="flex mt-4 items-center justify-center">
       <div>
@@ -57,15 +67,15 @@ const Admission=(props)=>{
       <Button type="secondary" title="Passez un entretien"/>
     </div>
         </section>
-        <section className=" px-[100px] py-[58px] justify-center bg-[#cc3333] p-[20px]" >
+        <section className=" px-[100px] py-[35px] justify-center bg-[#cc3333] p-[20px]" >
         <div className="flex">
-        <div style={{ width:"50vh" }} className="mb-[-60px]">
+        <div style={{ width:"64vh" }} className="mb-[-60px]">
           <img className="w-[100%] mt-8 rounded-s-3xl rounded-e-3xl" src={about} alt=""/>
           </div>
           
           <div className="flex flex-col" style={{ flex:1 }}>
           <h2 class="my-8 text-2xl font-bold  text-white md:text-4xl">
-          Etudigigue vous accompagne dans toutes vos démarches
+          Etudigigue vous accompagne dans toutes vos démarches d'admission
       </h2>
       <div class="grid grid-cols-2 space-y-4 divide-gray-100 dark:divide-gray-800">
             <div class="mt-8 flex gap-4 md:items-center">
@@ -75,8 +85,8 @@ const Admission=(props)=>{
                 </svg>        
               </div>
               <div class="w-5/6">
-                <h3 class="font-semibold text-lg  text-[#ffcc33]">Collecte des documents nécessaires</h3>
-                <p class="text-white">Nous vous guidons dans la recherche et la traduction des documents requis pour votre demande d'équivalence.</p>
+                <h3 class="font-semibold text-lg  text-[#ffcc33]">Consultation Initiale Gratuite</h3>
+                <p class="text-white">Contactez-nous pour une consultation gratuite. Nous discuterons de vos objectifs académiques et de votre projet d’études en Belgique.</p>
               </div> 
             </div> 
             <div class="pt-4 flex gap-4 md:items-center">
@@ -86,8 +96,8 @@ const Admission=(props)=>{
                 </svg>                                      
               </div>
               <div class="w-5/6">
-                <h3 class="font-semibold text-lg text-[#ffcc33]">Remplissage du formulaire de demande</h3>
-                <p class="text-white">Nous vous assistons dans la complétion du formulaire et veillons à ce qu'il soit correctement rempli.</p>
+                <h3 class="font-semibold text-lg text-[#ffcc33]">Sélection du Programme</h3>
+                <p class="text-white">Nous vous aidons à choisir le programme d’études et l’université qui correspondent le mieux à vos intérêts et à votre parcours académique.</p>
               </div> 
             </div> 
             <div class="pt-4 flex gap-4 md:items-center">
@@ -97,8 +107,8 @@ const Admission=(props)=>{
                 </svg>                                      
               </div>
               <div class="w-5/6">
-                <h3 class="font-semibold text-lg text-[#ffcc33]">Dépôt de la demande</h3>
-                <p class="text-white">Nous nous chargeons de déposer votre demande auprès des autorités compétentes et de suivre son avancement.</p>
+                <h3 class="font-semibold text-lg text-[#ffcc33]">Préparation de la Candidature</h3>
+                <p class="text-white">Nous vous guidons dans la préparation de tous les documents requis, y compris les relevés de notes, les lettres de recommandation, et les lettres de motivation.</p>
               </div> 
             </div> 
             <div class="pt-4 flex gap-4 md:items-center">
@@ -108,8 +118,8 @@ const Admission=(props)=>{
                 </svg>                                      
               </div>
               <div class="w-5/6">
-                <h3 class="font-semibold text-lg text-[#ffcc33]">Obtention de l'équivalence</h3>
-                <p class="text-white">Nous vous informons de la décision des autorités et vous assistons dans les démarches ultérieures.</p>
+                <h3 class="font-semibold text-lg text-[#ffcc33]">Soumission de la Demande</h3>
+                <p class="text-white">Nous vous assistons dans la soumission de votre candidature aux universités sélectionnées, en veillant à ce qu’elle soit complète et conforme aux exigences.</p>
               </div> 
             </div>
           </div>
@@ -120,7 +130,7 @@ const Admission=(props)=>{
         </section>
         <section className="mt-20 flex items-center justify-center">
           
-          <h2 className="text-center text-xl font-bold  text-black md:text-4xl">Pourquoi choisir<br/> Etudigigue pour l'équivalence de votre diplôme?</h2>
+          <h2 className="text-center text-xl font-bold  text-black md:text-4xl">Pourquoi choisir<br/> Etudigigue pour votre admission?</h2>
          
         </section>
         <section style={{ 
@@ -131,13 +141,13 @@ const Admission=(props)=>{
        
         }}>
         <div class="mt-16 grid   divide-x gap-4 div divide-gray-100   overflow-hidden  text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
-      <div   class=" p-3 relative rounded-3xl   bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+      <div   class=" p-3 flex justify-center items-center relative rounded-3xl   bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
         <div class="relative space-y-8 py-12 p-8">
           
 
           <div class="space-y-5">
             <h5 class="text-xl text-center font-semibold text-gray-700  transition group-hover:text-secondary">
-            Gain de temps et d'énergie
+            Expertise en Immigration Étudiante
             </h5>
             
           </div>
@@ -146,13 +156,13 @@ const Admission=(props)=>{
       </div>
       <div
       
-       class="group relative  rounded-3xl  bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl">
+       class="group relative flex justify-center items-center  rounded-3xl  bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl">
         <div class="relative space-y-8 py-12 p-8">
           
 
           <div class="space-y-2">
             <h5 class="text-xl text-center font-semibold text-gray-700  transition group-hover:text-secondary">
-            Réduction du stress et des démarches administratives
+            Processus simplifié
             </h5>
             
           </div>
@@ -160,13 +170,13 @@ const Admission=(props)=>{
         </div>
       </div>
       <div 
-      class="group relative rounded-3xl  bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+      class="group relative flex justify-center items-center rounded-3xl  bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
         <div class="relative space-y-8 py-12 p-8">
           
 
           <div class="space-y-2">
             <h5 class="text-xl text-center font-semibold text-gray-700 transition group-hover:text-secondary">
-            Confiance et tranquillité d'esprit 
+            Assistance Personnalisée
             </h5>
            
           </div>
@@ -174,13 +184,13 @@ const Admission=(props)=>{
         </div>
       </div>
       <div 
-      class="group relative rounded-3xl  bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+      class="group flex justify-center items-center relative rounded-3xl  bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
         <div class="relative space-y-8 py-12 p-8">
           
 
           <div class="space-y-2 flex justify-center items-center">
             <h5 class="text-xl text-center font-semibold text-gray-700  transition group-hover:text-secondary">
-            Taux de réussite<br/> élevé
+            Engagement envers votre Réussite
             </h5>
            
           </div>
