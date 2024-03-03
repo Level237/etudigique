@@ -19,7 +19,7 @@ const Campus=(props)=>{
     return (
         <>
         <section className=" bg-[#0000000a]">
-        <section className={`relative h-[50vh] bg-center bg-cover bg-[url('assets/img/admission/admission.jpg')] `}>
+        <section className={`relative h-[50vh] bg-left bg-cover bg-[url('assets/img/campus/campus.jpg')] `}>
         <div className="flex items-center justify-center absolute inset-0 bg-[#ffcc00] w-100 opacity-[0.7]">
           
         </div>
