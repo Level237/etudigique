@@ -1,13 +1,13 @@
-import img2 from "../../assets/img/campus/campus1.jpg"
-import img3 from "../../assets/img/campus/campus2.jpg"
-import img4 from "../../assets/img/campus/campus5.jpg"
-import img1 from "../../assets/img/campus/campus4.jpg"
-import img5 from "../../assets/img/campus/campus3.jpg"
-import img6 from "../../assets/img/campus/campus6.jpg"
+import img2 from "../../assets/img/visa/visa1.jpg"
+import img3 from "../../assets/img/visa/visa2.jpg"
+import img4 from "../../assets/img/visa/visa6.jpg"
+import img1 from "../../assets/img/visa/visa5.jpeg"
+import img5 from "../../assets/img/visa/visa4.jpg"
+import img6 from "../../assets/img/visa/visa3.jpg"
 import Circle from "../../components/Circle"
 import ServiceSlide from "../../components/sections/ServiceSlide"
 import Button from "../../components/ui/button"
-import about from "../../assets/img/campus/campusSlide.png"
+import about from "../../assets/img/visa/visaSlide.png"
 import { useEffect } from "react"
 
 const Demande=(props)=>{
@@ -19,12 +19,12 @@ const Demande=(props)=>{
     return (
         <>
         <section className=" bg-[#0000000a]">
-        <section className={`relative h-[50vh] bg-left bg-cover bg-[url('assets/img/campus/campus.jpg')] `}>
+        <section className={`relative h-[50vh] bg-left bg-cover bg-[url('assets/img/visa/visa.jpg')] `}>
         <div className="flex items-center justify-center absolute inset-0 bg-[#ffcc00] w-100 opacity-[0.7]">
           
         </div>
         <div className="absolute inset-0 flex items-center justify-center">
-        <h2 className="text-5xl font-bold text-white"> Campus Belgique</h2>
+        <h2 className="text-5xl font-bold text-white">Demande de Visa</h2>
         </div>
         </section>
        <section className="h-10 bg-[#cc3333]">
@@ -40,9 +40,9 @@ const Demande=(props)=>{
       
       <h2 class="my-8 mx-[34px] text-2xl font-bold flex items-center justify-center  text-black md:text-4xl text-center">
       
- Etudigigue vous facilite l'accès<br/> dans les plus grandes écoles en Belgique !
+      Etudigigue vous simplifie les démarches!
       </h2>
-      <p class=" text-gray-600 md:w-2/3 lg:w-3/7">Le programme Campus Belgique est une initiative du gouvernement belge qui permet aux étudiants étrangers de s'inscrire dans un établissement d'enseignement supérieur en Belgique. Ce programme facilite les démarches administratives et offre un accompagnement personnalisé aux étudiants.</p>
+      <p class=" text-gray-600 md:w-2/3 lg:w-3/7">Obtenir un visa d'études pour la Belgique peut s'avérer un véritable parcours du combattant. Entre les documents à fournir, les formulaires à remplir et les démarches administratives, il est facile de se perdre et de se décourager.</p>
     </div>
     <div className="flex mt-4 items-center justify-center">
       <div>
@@ -70,13 +70,13 @@ const Demande=(props)=>{
         </section>
         <section className=" px-[100px] py-[60px] justify-center bg-[#cc3333] p-[20px]" >
         <div className="flex">
-        <div style={{ width:"64vh" }} className="mb-[-60px]">
+        <div style={{ width:"68vh",marginTop:"140px" }} className="mb-[-60px]">
           <img className="w-[100%] mt-8 rounded-s-3xl rounded-e-3xl" src={about} alt=""/>
           </div>
           
           <div className="flex flex-col" style={{ flex:1 }}>
           <h2 class="my-8 text-2xl font-bold  text-white md:text-4xl">
-           Démarches à suivre pour une admission dans les plus grandes écoles de belgique
+           Démarches à suivre pour votre demande de visa
       </h2>
       <div class="grid grid-cols-2 space-y-4 divide-gray-100 dark:divide-gray-800">
             <div class="mt-8 flex gap-4 md:items-center">
@@ -86,10 +86,8 @@ const Demande=(props)=>{
                 </svg>        
               </div>
               <div class="w-5/6">
-                <h3 class="font-semibold text-lg  text-[#ffcc33]">Évaluation de votre éligibilité au programme</h3>
-                <p class="text-white">Analyse de votre situation académique et de vos qualifications.
-Vérification des critères d'éligibilité en fonction de votre nationalité et de votre programme d'études.
-Conseils personnalisés pour maximiser vos chances d'admission.</p>
+                <h3 class="font-semibold text-lg  text-[#ffcc33]">Rassembler les documents nécessaires</h3>
+                <p class="text-white"> Nous vous aidons à collecter tous les documents requis pour votre demande de visa, y compris votre passeport, votre lettre d’invitation, votre certificat médical, votre certificat de bonne conduite, et bien plus encore.</p>
               </div> 
             </div> 
             <div class="pt-4 flex gap-4 md:items-center">
@@ -99,10 +97,9 @@ Conseils personnalisés pour maximiser vos chances d'admission.</p>
                 </svg>                                      
               </div>
               <div class="w-5/6">
-                <h3 class="font-semibold text-lg text-[#ffcc33]">Aide à la constitution de votre dossier de candidature</h3>
-                <p class="text-white">Assistance dans la recherche et la collecte des documents requis.
-Vérification minutieuse de l'exhaustivité et de la conformité de votre dossier.
-Traduction des documents nécessaires, si besoin.</p>
+                <h3 class="font-semibold text-lg text-[#ffcc33]">Vérification, Conformité et Légalisation </h3>
+                <p class="text-white">Nous vérifions la validité, la conformité et la légalisation de vos documents selon les normes belges.
+</p>
               </div> 
             </div> 
             <div class="pt-4 flex gap-4 md:items-center">
@@ -112,8 +109,8 @@ Traduction des documents nécessaires, si besoin.</p>
                 </svg>                                      
               </div>
               <div class="w-5/6">
-                <h3 class="font-semibold text-lg text-[#ffcc33]">Conseils personnalisés pour le choix de votre université</h3>
-                <p class="text-white">Présentation des différentes universités et programmes d'études disponibles en Belgique.
+                <h3 class="font-semibold text-lg text-[#ffcc33]"> Formulaire de Demande de Visa en Ligne </h3>
+                <p class="text-white">Nous vous aidons à remplir le formulaire de demande de visa long séjour sur Visa-On-Web, le portail officiel pour les entrées dans l’espace Schengen.
 
 </p>
               </div> 
@@ -125,10 +122,9 @@ Traduction des documents nécessaires, si besoin.</p>
                 </svg>                                      
               </div>
               <div class="w-5/6">
-                <h3 class="font-semibold text-lg text-[#ffcc33]">Aide à l'obtention du visa d'études</h3>
+                <h3 class="font-semibold text-lg text-[#ffcc33]">Prise de Rendez-vous et dépôt du dossier</h3>
                 <p class="text-white">Constitution de votre dossier de demande de visa.
-Conseils pour la préparation de votre entretien à l'ambassade.
-Assistance dans les démarches administratives.</p>
+                Nous vous guidons pour prendre rendez-vous et déposer votre dossier de demande de visa auprès du centre TLS contact ou du consulat belge dans votre pays.</p>
               </div> 
             </div>
           </div>
@@ -139,8 +135,7 @@ Assistance dans les démarches administratives.</p>
         </section>
         <section className="mt-20 flex items-center justify-center">
           
-          <h2 className="text-center text-xl font-bold  text-black md:text-4xl">Pourquoi choisir Etudigigue  pour votre accès<br/> 
-dans les plus grandes écoles en Belgique?</h2>
+          <h2 className="text-center text-xl font-bold  text-black md:text-4xl">Pourquoi choisir Etudigigue<br/> pour votre demande de visa ?</h2>
          
         </section>
         <section style={{ 
@@ -150,14 +145,14 @@ dans les plus grandes écoles en Belgique?</h2>
        paddingBottom:"120px",
        
         }}>
-        <div class="mt-16 grid   divide-x gap-4 div divide-gray-100   overflow-hidden  text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-3">
+        <div class="mt-16 grid   divide-x gap-4 div divide-gray-100   overflow-hidden  text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
       <div   class=" p-3 flex justify-center items-center relative rounded-3xl   bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
         <div class="relative space-y-8 py-12 p-8">
           
 
           <div class="space-y-5">
             <h5 class="text-xl text-center font-semibold text-gray-700  transition group-hover:text-secondary">
-            Une équipe d’experts qualifiées et passionnés par l’éducation et la mobilité internationale.
+            Une équipe de professionnels qualifiés
             </h5>
             
           </div>
@@ -172,7 +167,7 @@ dans les plus grandes écoles en Belgique?</h2>
 
           <div class="space-y-2">
             <h5 class="text-xl text-center font-semibold text-gray-700  transition group-hover:text-secondary">
-            Une approche personnalisée et sur mesure, adapté à votre situation personnelle, académique et financière.
+            Accompagnement Complet 
             </h5>
             
           </div>
@@ -186,7 +181,21 @@ dans les plus grandes écoles en Belgique?</h2>
 
           <div class="space-y-2">
             <h5 class="text-xl text-center font-semibold text-gray-700 transition group-hover:text-secondary">
-            Une garantie de qualité et de satisfaction, avec un taux de réussite de plus de 95% pour l’obtention du visa d’étude.
+            Garantie de Qualité et de Satisfaction
+            </h5>
+           
+          </div>
+         
+        </div>
+      </div>
+      <div 
+      class="group relative flex justify-center items-center rounded-3xl  bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+        <div class="relative space-y-8 py-12 p-8">
+          
+
+          <div class="space-y-2">
+            <h5 class="text-xl text-center font-semibold text-gray-700 transition group-hover:text-secondary">
+            Transparence dans la procédure
             </h5>
            
           </div>

@@ -26,7 +26,7 @@ const Header=()=>{
         <li className="mt-3"><Link to="equivalence-de-diplome" title="Equivalence de Diplome" class="block py-1 px-2 hover:bg-[#ffcc008c]">Equivalence de diplome</Link></li>
         <li className="mt-3"><Link to="admission" class="block py-1 px-2 hover:bg-[#ffcc008c]">Admission</Link></li>
         <li className="mt-3"><Link to="campus-belgique" class="block py-1 px-2 hover:bg-[#ffcc008c]">Campus belgique</Link></li>
-        <li className="mt-3"><a href="#" class="block py-1 px-2 hover:bg-[#ffcc008c]">Demande de Visa</a></li>
+        <li className="mt-3"><Link to="demande-visa" class="block py-1 px-2 hover:bg-[#ffcc008c]">Demande de Visa</Link></li>
       </ul>
             </li>
             <li class='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
