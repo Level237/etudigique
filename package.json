@@ -15,7 +15,8 @@
     "react-scripts": "5.0.1",
     "react-wavify": "^1.10.0",
     "swiper": "^11.0.6",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "zustand": "^4.5.2"
   },
   "scripts": {
     "start": "react-scripts start",
