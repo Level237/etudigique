@@ -12,13 +12,14 @@ import {motion,useInView} from "framer-motion"
 import {  useEffect, useRef, useState } from "react";
 import Circle from "../components/Circle";
 import { initialStore } from "../store/store";
+import Modal from "../components/ui/Modal";
 
 
 
 const Homepage=(props)=>{
 
-  const ShowCard=initialStore((state)=>state.showCard)
-  const openCard=initialStore((state)=>state.openCard)
+
+ 
   let container = useRef(null); 
   let containerCircle=useRef(null)
   const viewRef=useRef(null)
@@ -51,6 +52,7 @@ const Homepage=(props)=>{
  
     return (
         <>
+        
         <section className="bg-[]">
         <HeroRoot/>
         <section className="mt-20" style={{ 

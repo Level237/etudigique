@@ -6,10 +6,15 @@ import 'swiper/css/effect-fade';
 import {FreeMode,Pagination} from "swiper/modules"
 import { UniversityImages } from "../../data/constants"
 import {motion} from "framer-motion"
+import { initialStore } from "../../store/store";
+import Modal from "../ui/Modal";
 const SchoolSlider=()=>{
+    const openCard=initialStore((state)=>state.openCard)
+    const showCard=initialStore((state)=>state.showCard)
 
     return (
         <>
+        {showCard && <Modal/>}
         <section className="mt-10 flex flex-col md:flex-row gap-5 items-center justify-center">
             <div className="w-[100%] md:w-[80%]">
                 <Swiper
@@ -30,9 +35,9 @@ const SchoolSlider=()=>{
                                     <section
                                     >
                                     {UniversityImages.map((image)=>(
-                               
-                               <SwiperSlide className=" relative mb-14 ">
-                                  
+                                        
+                               <SwiperSlide className=" relative mb-14 " onClick={openCard}>
+                                 
                                    <motion.img
                                    initial={{ 
                                     filter:"blur(12px)"

@@ -5,7 +5,8 @@ import university4 from "../assets/img/university/university4.jpeg"
 import university5 from "../assets/img/university/university5.jpg"
 export const UniversityImages=[
     {
-        src:university1
+        src:university1,
+        id:1
     },
     {
         src:university2
