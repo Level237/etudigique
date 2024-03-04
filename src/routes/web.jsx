@@ -4,6 +4,7 @@ import Homepage from "../pages/Homepage"
 import Equivalence from "../pages/services/Equivalence"
 import Admission from "../pages/services/Admission"
 import Campus from "../pages/services/Campus"
+import Demande from "../pages/services/Demande"
 
 export const routes=createBrowserRouter([
     {
@@ -22,6 +23,9 @@ export const routes=createBrowserRouter([
             },{
                 path:'campus-belgique',
                 element:<Campus title="Campus Belgique"/>
+            },{
+                path:"demande-visa",
+                element:<Demande title="Demande de Visa"/>
             }
         ]
     }
