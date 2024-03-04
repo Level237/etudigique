@@ -9,7 +9,7 @@ import {motion} from "framer-motion"
 import { initialStore } from "../../store/store";
 import Modal from "../ui/Modal";
 const SchoolSlider=()=>{
-    const openCard=initialStore((state)=>state.openCard)
+    const openCard=initialStore((state)=>state.showUniversity)
     const showCard=initialStore((state)=>state.showCard)
 
     return (
@@ -36,7 +36,7 @@ const SchoolSlider=()=>{
                                     >
                                     {UniversityImages.map((image)=>(
                                         
-                               <SwiperSlide className=" relative mb-14 " onClick={openCard}>
+                               <SwiperSlide className=" relative mb-14 " onClick={()=>openCard(image.id)}>
                                  
                                    <motion.img
                                    initial={{ 
