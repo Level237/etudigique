@@ -1,14 +1,14 @@
 
-import img2 from "../../assets/img/admission/admission1.jpg"
-import img3 from "../../assets/img/admission/admission2.jpg"
-import img4 from "../../assets/img/admission/admission3.jpg"
-import img1 from "../../assets/img/admission/admission5.jpg"
-import img5 from "../../assets/img/admission/admission6.jpg"
-import img6 from "../../assets/img/admission/admission7.jpg"
+import img2 from "../../assets/img/campus/campus1.jpg"
+import img3 from "../../assets/img/campus/campus2.jpg"
+import img4 from "../../assets/img/campus/campus5.jpg"
+import img1 from "../../assets/img/campus/campus4.jpg"
+import img5 from "../../assets/img/campus/campus3.jpg"
+import img6 from "../../assets/img/campus/campus6.jpg"
 import Circle from "../../components/Circle"
 import ServiceSlide from "../../components/sections/ServiceSlide"
 import Button from "../../components/ui/button"
-import about from "../../assets/img/admission.png"
+import about from "../../assets/img/campus/campusSlide.png"
 import { useEffect } from "react"
 
 const Campus=(props)=>{
@@ -39,9 +39,10 @@ const Campus=(props)=>{
       </svg>
       
       <h2 class="my-8 mx-[34px] text-2xl font-bold flex items-center justify-center  text-black md:text-4xl text-center">
-      Admission dans une université belge : Etudigigue<br/> vous ouvre les portes !
+      
+ Etudigigue vous facilite l'accès<br/> dans les plus grandes écoles en Belgique !
       </h2>
-      <p class=" text-gray-600 md:w-2/3 lg:w-3/7">Etudier en Belgique est un rêve pour de nombreux étudiants. Avec ses universités de renommée internationale, son système éducatif de qualité et son cadre de vie agréable, la Belgique attire chaque année des milliers d'étudiants du monde entier.</p>
+      <p class=" text-gray-600 md:w-2/3 lg:w-3/7">Le programme Campus Belgique est une initiative du gouvernement belge qui permet aux étudiants étrangers de s'inscrire dans un établissement d'enseignement supérieur en Belgique. Ce programme facilite les démarches administratives et offre un accompagnement personnalisé aux étudiants.</p>
     </div>
     <div className="flex mt-4 items-center justify-center">
       <div>
@@ -67,7 +68,7 @@ const Campus=(props)=>{
       <Button type="secondary" title="Passez un entretien"/>
     </div>
         </section>
-        <section className=" px-[100px] py-[35px] justify-center bg-[#cc3333] p-[20px]" >
+        <section className=" px-[100px] py-[60px] justify-center bg-[#cc3333] p-[20px]" >
         <div className="flex">
         <div style={{ width:"64vh" }} className="mb-[-60px]">
           <img className="w-[100%] mt-8 rounded-s-3xl rounded-e-3xl" src={about} alt=""/>
@@ -75,7 +76,7 @@ const Campus=(props)=>{
           
           <div className="flex flex-col" style={{ flex:1 }}>
           <h2 class="my-8 text-2xl font-bold  text-white md:text-4xl">
-          Etudigigue vous accompagne dans toutes vos démarches d'admission
+           Démarches à suivre pour une admission dans les plus grandes écoles de belgique
       </h2>
       <div class="grid grid-cols-2 space-y-4 divide-gray-100 dark:divide-gray-800">
             <div class="mt-8 flex gap-4 md:items-center">
@@ -85,8 +86,10 @@ const Campus=(props)=>{
                 </svg>        
               </div>
               <div class="w-5/6">
-                <h3 class="font-semibold text-lg  text-[#ffcc33]">Consultation Initiale Gratuite</h3>
-                <p class="text-white">Contactez-nous pour une consultation gratuite. Nous discuterons de vos objectifs académiques et de votre projet d’études en Belgique.</p>
+                <h3 class="font-semibold text-lg  text-[#ffcc33]">Évaluation de votre éligibilité au programme</h3>
+                <p class="text-white">Analyse de votre situation académique et de vos qualifications.
+Vérification des critères d'éligibilité en fonction de votre nationalité et de votre programme d'études.
+Conseils personnalisés pour maximiser vos chances d'admission.</p>
               </div> 
             </div> 
             <div class="pt-4 flex gap-4 md:items-center">
@@ -96,8 +99,10 @@ const Campus=(props)=>{
                 </svg>                                      
               </div>
               <div class="w-5/6">
-                <h3 class="font-semibold text-lg text-[#ffcc33]">Sélection du Programme</h3>
-                <p class="text-white">Nous vous aidons à choisir le programme d’études et l’université qui correspondent le mieux à vos intérêts et à votre parcours académique.</p>
+                <h3 class="font-semibold text-lg text-[#ffcc33]">Aide à la constitution de votre dossier de candidature</h3>
+                <p class="text-white">Assistance dans la recherche et la collecte des documents requis.
+Vérification minutieuse de l'exhaustivité et de la conformité de votre dossier.
+Traduction des documents nécessaires, si besoin.</p>
               </div> 
             </div> 
             <div class="pt-4 flex gap-4 md:items-center">
@@ -107,8 +112,10 @@ const Campus=(props)=>{
                 </svg>                                      
               </div>
               <div class="w-5/6">
-                <h3 class="font-semibold text-lg text-[#ffcc33]">Préparation de la Candidature</h3>
-                <p class="text-white">Nous vous guidons dans la préparation de tous les documents requis, y compris les relevés de notes, les lettres de recommandation, et les lettres de motivation.</p>
+                <h3 class="font-semibold text-lg text-[#ffcc33]">Conseils personnalisés pour le choix de votre université</h3>
+                <p class="text-white">Présentation des différentes universités et programmes d'études disponibles en Belgique.
+
+</p>
               </div> 
             </div> 
             <div class="pt-4 flex gap-4 md:items-center">
@@ -118,8 +125,10 @@ const Campus=(props)=>{
                 </svg>                                      
               </div>
               <div class="w-5/6">
-                <h3 class="font-semibold text-lg text-[#ffcc33]">Soumission de la Demande</h3>
-                <p class="text-white">Nous vous assistons dans la soumission de votre candidature aux universités sélectionnées, en veillant à ce qu’elle soit complète et conforme aux exigences.</p>
+                <h3 class="font-semibold text-lg text-[#ffcc33]">Aide à l'obtention du visa d'études</h3>
+                <p class="text-white">Constitution de votre dossier de demande de visa.
+Conseils pour la préparation de votre entretien à l'ambassade.
+Assistance dans les démarches administratives.</p>
               </div> 
             </div>
           </div>
@@ -130,7 +139,8 @@ const Campus=(props)=>{
         </section>
         <section className="mt-20 flex items-center justify-center">
           
-          <h2 className="text-center text-xl font-bold  text-black md:text-4xl">Pourquoi choisir<br/> Etudigigue pour votre admission?</h2>
+          <h2 className="text-center text-xl font-bold  text-black md:text-4xl">Pourquoi choisir Etudigigue  pour votre accès<br/> 
+dans les plus grandes écoles en Belgique?</h2>
          
         </section>
         <section style={{ 
@@ -140,14 +150,14 @@ const Campus=(props)=>{
        paddingBottom:"120px",
        
         }}>
-        <div class="mt-16 grid   divide-x gap-4 div divide-gray-100   overflow-hidden  text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
+        <div class="mt-16 grid   divide-x gap-4 div divide-gray-100   overflow-hidden  text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-3">
       <div   class=" p-3 flex justify-center items-center relative rounded-3xl   bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
         <div class="relative space-y-8 py-12 p-8">
           
 
           <div class="space-y-5">
             <h5 class="text-xl text-center font-semibold text-gray-700  transition group-hover:text-secondary">
-            Expertise en Immigration Étudiante
+            Une équipe d’experts qualifiées et passionnés par l’éducation et la mobilité internationale.
             </h5>
             
           </div>
@@ -162,7 +172,7 @@ const Campus=(props)=>{
 
           <div class="space-y-2">
             <h5 class="text-xl text-center font-semibold text-gray-700  transition group-hover:text-secondary">
-            Processus simplifié
+            Une approche personnalisée et sur mesure, adapté à votre situation personnelle, académique et financière.
             </h5>
             
           </div>
@@ -176,27 +186,14 @@ const Campus=(props)=>{
 
           <div class="space-y-2">
             <h5 class="text-xl text-center font-semibold text-gray-700 transition group-hover:text-secondary">
-            Assistance Personnalisée
+            Une garantie de qualité et de satisfaction, avec un taux de réussite de plus de 95% pour l’obtention du visa d’étude.
             </h5>
            
           </div>
          
         </div>
       </div>
-      <div 
-      class="group flex justify-center items-center relative rounded-3xl  bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
-        <div class="relative space-y-8 py-12 p-8">
-          
-
-          <div class="space-y-2 flex justify-center items-center">
-            <h5 class="text-xl text-center font-semibold text-gray-700  transition group-hover:text-secondary">
-            Engagement envers votre Réussite
-            </h5>
-           
-          </div>
-         
-        </div>
-      </div>
+     
       
     </div>
   
