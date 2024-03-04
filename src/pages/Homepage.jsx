@@ -11,10 +11,14 @@ import boss from "../../src/assets/img/boss.jpg"
 import {motion,useInView} from "framer-motion"
 import {  useEffect, useRef, useState } from "react";
 import Circle from "../components/Circle";
+import { initialStore } from "../store/store";
 
 
 
 const Homepage=(props)=>{
+
+  const ShowCard=initialStore((state)=>state.showCard)
+  const openCard=initialStore((state)=>state.openCard)
   let container = useRef(null); 
   let containerCircle=useRef(null)
   const viewRef=useRef(null)
