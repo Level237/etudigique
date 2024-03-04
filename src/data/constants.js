@@ -6,18 +6,27 @@ import university5 from "../assets/img/university/university5.jpg"
 export const UniversityImages=[
     {
         src:university1,
-        id:1
+        id:1,
+        title:"Université de Liège"
     },
     {
-        src:university2
+        src:university2,
+        id:2,
+        title:"Université de Mons"
     },
     {
-        src:university3
+        src:university3,
+        id:3,
+        title:"Université de Namur"
     },
     {
-        src:university4
+        src:university4,
+        id:4,
+        title:"Université de Bruxelles"
     },
     {
-        src:university5
+        src:university5,
+        id:5,
+        title:"Université de Louvain"
     }
 ]
