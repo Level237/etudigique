@@ -138,11 +138,11 @@ const Homepage=(props)=>{
    
     <div class="mt-16 grid   divide-x gap-4 divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden  text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-3">
       <motion.div initial={{ 
-        y:100,
-        opacity:0
+        y:isInView ? 0 : 100,
+        opacity:isInView ? null :0
        }}
        whileInView={{ 
-        y:0,
+        y:isInView ? 0 : 100,
         opacity:1
         }}
         ref={viewRef}  class=" p-3 relative rounded-3xl   bg-[#cc3333] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
@@ -162,11 +162,11 @@ const Homepage=(props)=>{
       </motion.div>
       <motion.div
       initial={{ 
-        y:200,
-        opacity:0
+        y:isInView ? 0 : 200,
+        opacity:isInView ? null :0
        }}
        whileInView={{ 
-        y:0,
+        y:isInView ? 0 : 200,
         opacity:1
         }}
         ref={viewRef}
@@ -187,11 +187,11 @@ const Homepage=(props)=>{
       </motion.div>
       <motion.div 
       initial={{ 
-        y:-200,
-        opacity:0
+        y:isInView ? 0 : -200,
+        opacity:isInView ? null :0
        }}
        whileInView={{ 
-        y:0,
+        y:isInView ? 0 : -200,
         opacity:1
         }}
         ref={viewRef}

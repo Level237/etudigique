@@ -11,7 +11,7 @@ const Button=(props)=>{
     bgBtn="#cc3333"
     colorBtn="white"
   }else if(props.type==="default"){
-    bgBtn="#000"
+    bgBtn="#000000"
     colorBtn="white"
   }
     let classeBtn=`inline-flex items-center bg-[${bgBtn}] text-${colorBtn} justify-center px-5 py-3 mr-3 text-base font-medium text-center   rounded-lg   focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 `
