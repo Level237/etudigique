@@ -21,7 +21,7 @@ const SlideLeftToRight=(props)=>{
           </div>
         </div>
         <div class="md:5/12 lg:w-1/2">
-          <motion.img src={props.image} alt="image" 
+          <motion.img className="max-sm:hidden" src={props.image} alt="image" 
           
           style={{ 
             objectFit:"cover"

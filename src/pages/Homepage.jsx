@@ -11,6 +11,13 @@ import boss from "../../src/assets/img/boss.jpg"
 import {motion,useInView} from "framer-motion"
 import {  useEffect, useRef, useState } from "react";
 import Circle from "../components/Circle";
+import {Swiper,SwiperSlide} from "swiper/react"
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/free-mode'
+import 'swiper/css/effect-fade';
+
+import {FreeMode,Pagination} from "swiper/modules"
 import { initialStore } from "../store/store";
 import Modal from "../components/ui/Modal";
 
@@ -77,9 +84,8 @@ const Homepage=(props)=>{
           }}>
             
          <div
-         style={{ 
-            marginTop:"150px",
-          }}
+        
+          className="mt-[150px] max-sm:mt-[45px]"
          >
            
          <SlideLeftToRight 
@@ -96,11 +102,9 @@ const Homepage=(props)=>{
          
          </section>
          <section style={{ 
-       
-        marginTop:"-80px",
         paddingBottom:"120px",
         
-         }} className=" relative bg-[#0000000a]">
+         }} className=" mt-[-80px] max-sm:mt-[-180px] relative bg-[#0000000a]">
           <Circle width="250px" height="250px" bgColor="#ffcc00" opacity="0.2" left="-90px"/>
           <Circle width="100px" height="100px" bgColor="#ffcc00" opacity="0.1" right="180px"/>
           <div style={{ 
@@ -136,7 +140,7 @@ const Homepage=(props)=>{
     </div>
     
    
-    <div class="mt-16 grid   divide-x gap-4 divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden  text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-3">
+    <div class="mt-16 grid max-sm:hidden   divide-x gap-4 divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden  text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-3">
       <motion.div initial={{ 
         y:isInView ? 0 : 100,
         opacity:isInView ? null :0
@@ -215,7 +219,118 @@ const Homepage=(props)=>{
       
       
     </div>
-   
+   <div className="mt-20 lg:hidden">
+   <Swiper
+   centeredSlides={true}
+   loop={true}
+   effect='coverflow'
+   speed={1000}
+  
+                breakpoints={{ 
+                    360:{
+                        slidesPerView:1
+                    },
+                    900:{
+                        slidesPerView:2
+                    }
+                 }}
+               slidesPerView={2}
+               watchSlidesProgress
+               spaceBetween={40}
+                 freeMode={true}
+                 pagination={{ 
+                    clickable:true
+                  }}
+                  
+                  modules={[
+                    FreeMode,
+                    Pagination,
+                  ]}
+                  
+                >
+                     
+                                        
+                                    <section
+                                    
+                                    >
+                                  
+                                        
+                               <SwiperSlide className=" relative " >
+                               <div  class=" p-3 relative rounded-3xl   bg-[#cc3333] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+        <div class="relative space-y-8 py-5 p-5">
+          <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" class="w-12" width="512" height="512" alt="burger illustration"/>
+
+          <div class="space-y-5">
+            <h5 class="text-xxl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+            Expertise et connaissance approfondie
+            </h5>
+            <p class="text-gray-600 dark:text-gray-300">
+            Notre équipe est composée d'experts chevronnés qui maîtrisent parfaitement les procédures de visa et les exigences des autorités belges.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+      
+                                 
+                                 
+                               
+                             
+                              
+                               </SwiperSlide>
+                               <SwiperSlide className=" relative " >
+                               <div
+     
+       class="group relative  rounded-3xl  bg-[#cc3333] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+        <div class="relative space-y-8 py-8 p-10">
+          <img src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png" class="w-12" width="512" height="512" alt="burger illustration"/>
+
+          <div class="space-y-2">
+            <h5 class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+            Accompagnement personnalisé
+            </h5>
+            <p class="text-gray-600 dark:text-gray-300">
+            Nous offrons un suivi individualisé et adapté à vos besoins spécifiques, de l'évaluation de votre profil à la finalisation de votre dossier.
+            </p>
+          </div>
+        
+        </div>
+      </div>
+                                 
+                                 
+                               
+                             
+                              
+                               </SwiperSlide>
+                               <SwiperSlide className=" relative " >
+                               <div 
+       class="group relative rounded-3xl  bg-[#cc3333] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+        <div class="relative space-y-8 py-12 p-10">
+          <img src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png" class="w-12" width="512" height="512" alt="burger illustration"/>
+
+          <div class="space-y-2">
+            <h5 class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+            Conseils personnalisés
+            </h5>
+            <p class="text-gray-600 dark:text-gray-300">
+            Nos experts vous prodiguent des conseils avisés pour maximiser vos chances de succès à chaque étape du processus.
+            </p>
+          </div>
+         
+        </div>
+      </div>
+                                 
+                                 
+                               
+                             
+                              
+                               </SwiperSlide>
+                                    </section>
+                           
+                        
+                            
+                </Swiper>
+   </div>
 </div>
 </div>
         </section>
