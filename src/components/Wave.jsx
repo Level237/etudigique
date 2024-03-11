@@ -8,11 +8,10 @@ const OwnWave=(props)=>{
         position:"absolute",
         left: 0,
         right:0,
-        height: "125vh",
         display: "flex",
         zIndex: -1,
         transform: `rotate(${props.deg}deg)`,
-     }}>
+     }} className="h-[125vh] max-sm:h-[100vh]">
         <Wave
           fill={props.color}
           paused={props.paused}

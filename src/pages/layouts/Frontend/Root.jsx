@@ -5,9 +5,12 @@ const RootLayout=()=>{
 
     return (
         <>
+        <section className="overflow-x-hidden">
         <Header/>
             <Outlet/>
         <Footer/>
+        </section>
+       
         </>
         
     )

@@ -16,8 +16,16 @@ const SchoolSlider=()=>{
         <>
         {showCard && <Modal/>}
         <section className="mt-10 flex flex-col md:flex-row gap-5 items-center justify-center">
-            <div className="w-[100%] md:w-[80%]">
+            <div className="w-[100%] md:w-[80%] max-sm:w-[90%]">
                 <Swiper
+                breakpoints={{ 
+                    360:{
+                        slidesPerView:1
+                    },
+                    900:{
+                        slidesPerView:2
+                    }
+                 }}
                slidesPerView={2}
                watchSlidesProgress
                spaceBetween={40}

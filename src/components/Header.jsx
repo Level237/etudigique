@@ -42,7 +42,7 @@ const Header=()=>{
             
           </ul>
           
-          <div class='flex lg:ml-auto max-lg:w-full'>
+          <div class='flex lg:ml-auto max-lg:w-full max-sm:hidden'>
             <div
               class='flex xl:w-80 max-xl:w-full bg-gray-100 px-6 py-3 rounded outline outline-transparent focus-within:outline-[#007bff]'>
               <input type='text' placeholder='Search something...'

@@ -53,7 +53,7 @@ const Homepage=(props)=>{
     return (
         <>
         
-        <section className="bg-[]">
+        <section className="overflow-x-hidden ">
         <HeroRoot/>
         <section className="mt-20" style={{ 
         display:"flex",
@@ -62,7 +62,7 @@ const Homepage=(props)=>{
        
          }}>
 
-        <h1 class="max-w-3xl  text-4xl text-center font-bold  md:text-5xl xl:text-5xl text-black">Etudier dans les plus grandes écoles en Belgique</h1>
+        <h1 class="max-w-3xl  text-4xl text-center font-bold  md:text-5xl xl:text-5xl text-black max-sm:text-3xl">Etudier dans les plus grandes écoles en Belgique</h1>
         
         </section>
         <section>
