@@ -21,7 +21,7 @@ const HeroRoot=()=>{
     },[])
     return (
         <>
-        <section  class=" bg-white mb-2 dark:bg-gray-900"
+        <section  class=" bg-white mb-2 mt-[90px] dark:bg-gray-900"
         
         >
     
