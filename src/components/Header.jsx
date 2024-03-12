@@ -1,16 +1,25 @@
 import { Link } from "react-router-dom";
 import logowhite from "../assets/img/logowhite.png"
 
-const Header=()=>{
 
+
+const Header=(props)=>{
+
+  const openHeaderMobile=async()=>{
+    props.open()
+   
+   
+  }
     return (
-        <>
-        <header class='sticky top-0 z-50  py-4 px-4 sm:px-10 bg-[#121533] font-[sans-serif] min-h-[70px]' style={{ marginBottom:"-2px"}}>
+       
+
+       
+        <header   class='sticky top-0 z-50  py-4 px-4 sm:px-10 bg-[#121533] font-[sans-serif] min-h-[70px]' style={{ marginBottom:"-2px"}}>
         <div class='flex flex-wrap items-center gap-x-2 max-lg:gap-y-6'>
           <Link to="" href="javascript:void(0)"><img src={logowhite} alt="logo" className='w-60' />
           </Link>
-          <button id="toggle" class='lg:hidden ml-auto'>
-            <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <button onClick={()=>openHeaderMobile()} id="toggle" class='lg:hidden ml-auto'>
+            <svg class="w-7 h-7" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd"
                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                 clip-rule="evenodd"></path>
@@ -56,8 +65,10 @@ const Header=()=>{
             </div>
           </div>
         </div>
+        
       </header>
-        </>
+      
+    
     )
 }
 
