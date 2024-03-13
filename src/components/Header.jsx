@@ -14,7 +14,7 @@ const Header=(props)=>{
        
 
        
-        <header   class='w-[100%] top-0 z-50  py-4 px-4 sm:px-10 bg-[#121533] font-[sans-serif] min-h-[70px]' >
+        <header   class='w-[100%] sticky top-0 z-50  py-4 px-4 sm:px-10 bg-[#121533] font-[sans-serif] min-h-[70px]' >
         <div class='flex flex-wrap items-center gap-x-2 max-lg:gap-y-6'>
           <Link to="" href="javascript:void(0)"><img src={logowhite} alt="logo" className='w-60' />
           </Link>
@@ -38,8 +38,8 @@ const Header=(props)=>{
         <li className="mt-3"><Link to="demande-visa" class="block py-1 px-2 hover:bg-[#ffcc008c]">Demande de Visa</Link></li>
       </ul>
             </li>
-            <li class='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
-                class='lg:hover:text-[#ffcc00] text-white block font-semibold text-[15px]'>A Propos de nous</a>
+            <li class='max-lg:border-b max-lg:py-2 px-3'><Link to='a-propos-de-nous'
+                class='lg:hover:text-[#ffcc00] text-white block font-semibold text-[15px]'>A Propos de nous</Link>
             </li>
             <li class='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
                 class='lg:hover:text-[#ffcc00] text-white block font-semibold text-[15px]'>Contact</a>
