@@ -9,7 +9,7 @@ const ServiceSlide=(props)=>{
           
         </div>
         <div className="absolute inset-0 flex items-center justify-center">
-        <h2 className="text-5xl font-bold text-white"> {props.title}</h2>
+        <h2 className="text-5xl max-sm:text-3xl font-bold text-white"> {props.title}</h2>
         </div>
         </section>
         <section className="h-10 bg-[#cc3333]">

@@ -9,6 +9,7 @@ import img6 from "../../assets/img/equivalence/equivalence6.jpg"
 import about from "../../assets/img/equivalence/about.png"
 import Button from "../../components/ui/button";
 import Circle from "../../components/Circle";
+import {motion} from "framer-motion"
 import {defer} from "react-router-dom"
 const Equivalence=(props)=>{
 
@@ -31,22 +32,43 @@ const Equivalence=(props)=>{
       <h2 class="my-8 text-2xl font-bold flex items-center justify-center  text-black md:text-4xl text-center">
       Etudigigue vous facilite la vie !
       </h2>
-      <p class=" text-gray-600 md:w-2/3 lg:w-3/7">Obtenir l'équivalence de votre diplôme est une étape indispensable pour poursuivre vos études en Belgique. Cette procédure peut s'avérer complexe et fastidieuse, mais Etudigigue est là pour vous simplifier la vie !</p>
+      <motion.div
+      initial={{ 
+        x:0
+       }}
+       animate={{ 
+        x:[100,200,300,400]
+        }}
+        transition={{ 
+          duration:2
+         }}
+      className="flex lg:hidden justify-center">
+       <img className="w-[150px] mr-3 rounded-s-3xl rounded-e-3xl" src={img4}/>
+       <img className="w-[150px] mr-3 rounded-s-3xl rounded-e-3xl" src={img4}/>
+       <img className="w-[150px] mr-3 rounded-s-3xl rounded-e-3xl" src={img4}/>
+      <img className="w-[150px] mr-3 rounded-s-3xl rounded-e-3xl" src={img4}/>
+      <img className="w-[150px] rounded-s-3xl rounded-e-3xl" src={img1}/>
+      <img className="w-[150px] ml-3 rounded-s-3xl rounded-e-3xl" src={img2}/>
+      <img className="w-[150px] ml-3 rounded-s-3xl rounded-e-3xl" src={img2}/>
+      <img className="w-[150px] ml-3 rounded-s-3xl rounded-e-3xl" src={img2}/>
+      </motion.div>
+      
+      <p class=" text-gray-600 md:w-2/3 max-sm:mt-5 lg:w-3/7 max-sm:text-center">Obtenir l'équivalence de votre diplôme est une étape indispensable pour poursuivre vos études en Belgique. Cette procédure peut s'avérer complexe et fastidieuse, mais Etudigigue est là pour vous simplifier la vie !</p>
     </div>
     <div className="flex mt-4 items-center justify-center">
       <div>
 
       </div>
       <div className="grid grid-cols-4 gap-5">
-        <div className="flex flex-col">
+        <div className="flex max-sm:hidden flex-col">
         <img className="w-60 rounded-s-3xl rounded-e-3xl" src={img2} alt="obtention de diplome"/>
-        <img className="w-60 mt-8 rounded-s-3xl rounded-e-3xl" src={img3} alt=""/>
+        <img className="w-60  mt-8 rounded-s-3xl rounded-e-3xl" src={img3} alt=""/>
         </div>
       
-      <img className="w-60 rounded-s-3xl rounded-e-3xl" src={img4}/>
-      <img className="w-60 rounded-s-3xl rounded-e-3xl" src={img1}/>
+      <img className="w-60 max-sm:hidden rounded-s-3xl rounded-e-3xl" src={img4}/>
+      <img className="w-60 max-sm:hidden rounded-s-3xl rounded-e-3xl" src={img1}/>
       
-      <div className="flex flex-col">
+      <div className="flex max-sm:hidden flex-col">
         <img className="w-60 rounded-s-3xl rounded-e-3xl" src={img5}/>
         <img className="w-60 mt-8 rounded-s-3xl rounded-e-3xl" src={img6}/>
         </div>
@@ -57,17 +79,17 @@ const Equivalence=(props)=>{
       <Button type="secondary" title="Passez un entretien"/>
     </div>
         </section>
-        <section className=" px-[100px] py-[58px] justify-center bg-[#cc3333] p-[20px]" >
-        <div className="flex">
-        <div style={{ width:"50vh" }} className="mb-[-60px]">
+        <section className=" lg:px-[100px] py-[58px] justify-center bg-[#cc3333] p-[20px]" >
+        <div className="flex max-sm:flex-col">
+        <div style={{ width:"50vh" }} className="mb-[-60px] max-sm:hidden">
           <img className="w-[100%] mt-8 rounded-s-3xl rounded-e-3xl" src={about} alt=""/>
           </div>
           
           <div className="flex flex-col" style={{ flex:1 }}>
-          <h2 class="my-8 text-2xl font-bold  text-white md:text-4xl">
+          <h2 class="my-8 text-2xl max-sm:text-xl max-sm:text-center font-bold  text-white md:text-4xl">
           Etudigigue vous accompagne dans toutes vos démarches
       </h2>
-      <div class="grid grid-cols-2 space-y-4 divide-gray-100 dark:divide-gray-800">
+      <div class="grid grid-cols-2 max-sm:grid-cols-1 space-y-4 divide-gray-100 dark:divide-gray-800">
             <div class="mt-8 flex gap-4 md:items-center">
               <div class="w-12 h-12 flex gap-4 rounded-full bg-[#ffcc3321]">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 m-auto text-[#ffcc33]">
