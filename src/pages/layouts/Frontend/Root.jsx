@@ -80,7 +80,7 @@ const RootLayout=()=>{
         <>
         
         <section  className="relative overflow-x-hidden">
-        <div ref={scope} id='navbar' className="translate-x-[700px] lg:hidden fixed z-[99999999] top-0 right-0 bottom-[100%]   w-[70vw] h-[100%]  bg-[#cc3333]">
+        <div ref={scope} id='navbar'style={{ display:"none" }} className=" lg:hidden fixed z-[99999999] top-0 right-0 bottom-[100%]   w-[70vw] h-[100%]  bg-[#cc3333]">
         <React.Fragment >
             <div className=" text-white text-4xl">
             <BiX onClick={()=>close()}/>

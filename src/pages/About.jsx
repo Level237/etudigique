@@ -27,7 +27,7 @@ const About=()=>{
         <h2 className="text-5xl font-bold text-white"> A propos de nous</h2>
         </div>
         </section>
-        <section className="h-10 bg-[#cc3333]">
+        <section className="h-10 bg-[#554444]">
 
         </section>
         <section>
