@@ -9,7 +9,7 @@ import img6 from "../../assets/img/equivalence/equivalence6.jpg"
 import about from "../../assets/img/equivalence/about.png"
 import Button from "../../components/ui/button";
 import Circle from "../../components/Circle";
-import {motion,useMotionValue,animate} from "framer-motion"
+
 import {defer} from "react-router-dom"
 import {Swiper,SwiperSlide} from "swiper/react"
 
