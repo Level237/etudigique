@@ -76,7 +76,7 @@ const Campus=(props)=>{
       <Button type="secondary" title="Passez un entretien"/>
     </div>
         </section>
-        <section className=" lg:px-[100px] py-[58px] lg:pb-2 justify-center bg-[#cc3333] p-[20px]" >
+        <section className=" lg:px-[100px] py-[58px]  justify-center bg-[#cc3333] p-[20px]" >
         <div className="flex">
         <div style={{ width:"64vh" }} className="max-sm:hidden mb-[-60px]">
           <img className="w-[100%] mt-8 rounded-s-3xl rounded-e-3xl" src={about} alt=""/>
