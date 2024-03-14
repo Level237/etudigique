@@ -9,7 +9,14 @@ import ServiceSlide from "../../components/sections/ServiceSlide"
 import Button from "../../components/ui/button"
 import about from "../../assets/img/visa/visaSlide.png"
 import { useEffect } from "react"
+import InfiniteImage from "../../components/InfiniteImage"
+import {Swiper,SwiperSlide} from "swiper/react"
+import {FreeMode,Pagination} from "swiper/modules"
 
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/free-mode'
+import 'swiper/css/effect-fade';
 const Demande=(props)=>{
 
 
@@ -24,7 +31,7 @@ const Demande=(props)=>{
           
         </div>
         <div className="absolute inset-0 flex items-center justify-center">
-        <h2 className="text-5xl font-bold text-white">Demande de Visa</h2>
+        <h2 className="text-5xl max-sm:text-center max-sm:text-4xl font-bold text-white">Demande de Visa</h2>
         </div>
         </section>
        <section className="h-10 bg-[#cc3333]">
@@ -38,28 +45,29 @@ const Demande=(props)=>{
         <path fill-rule="evenodd" d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z" clip-rule="evenodd"></path>
       </svg>
       
-      <h2 class="my-8 mx-[34px] text-2xl font-bold flex items-center justify-center  text-black md:text-4xl text-center">
+      <h2 class="my-8 text-2xl font-bold flex items-center justify-center  text-black md:text-4xl text-center">
       
       Etudigigue vous simplifie les démarches!
       </h2>
-      <p class=" text-gray-600 md:w-2/3 lg:w-3/7">Obtenir un visa d'études pour la Belgique peut s'avérer un véritable parcours du combattant. Entre les documents à fournir, les formulaires à remplir et les démarches administratives, il est facile de se perdre et de se décourager.</p>
+      <InfiniteImage img1={img4} img2={img6} img3={img1} img4={img4}/>
+      <p class="max-sm:mt-5 text-gray-600 md:w-2/3 lg:w-3/7">Obtenir un visa d'études pour la Belgique peut s'avérer un véritable parcours du combattant. Entre les documents à fournir, les formulaires à remplir et les démarches administratives, il est facile de se perdre et de se décourager.</p>
     </div>
     <div className="flex mt-4 items-center justify-center">
       <div>
 
       </div>
       <div className="grid grid-cols-4 gap-5">
-        <div className="flex flex-col">
+        <div className="flex flex-col max-sm:hidden">
         <img className="w-60 rounded-s-3xl rounded-e-3xl" src={img2} alt="obtention de diplome"/>
         <img className="w-60 mt-8 rounded-s-3xl rounded-e-3xl" src={img3} alt=""/>
         </div>
       
-      <img className="w-60 rounded-s-3xl rounded-e-3xl" src={img4}/>
-      <img className="w-60 rounded-s-3xl rounded-e-3xl" src={img1}/>
+      <img className="max-sm:hidden w-60 rounded-s-3xl rounded-e-3xl" src={img4}/>
+      <img className="max-sm:hidden w-60 rounded-s-3xl rounded-e-3xl" src={img1}/>
       
       <div className="flex flex-col">
-        <img className="w-60 rounded-s-3xl rounded-e-3xl" src={img5}/>
-        <img className="w-60 mt-8 rounded-s-3xl rounded-e-3xl" src={img6}/>
+        <img className="max-sm:hidden w-60 rounded-s-3xl rounded-e-3xl" src={img5}/>
+        <img className="max-sm:hidden w-60 mt-8 rounded-s-3xl rounded-e-3xl" src={img6}/>
         </div>
     </div>
     <div></div>
@@ -68,17 +76,17 @@ const Demande=(props)=>{
       <Button type="secondary" title="Passez un entretien"/>
     </div>
         </section>
-        <section className=" px-[100px] py-[60px] justify-center bg-[#cc3333] p-[20px]" >
+        <section className=" lg:px-[100px] py-[58px]  justify-center bg-[#cc3333] p-[20px]" >
         <div className="flex">
-        <div style={{ width:"68vh",marginTop:"140px" }} className="mb-[-60px]">
+        <div style={{ width:"68vh",marginTop:"140px" }} className="max-sm:hidden mb-[-60px]">
           <img className="w-[100%] mt-8 rounded-s-3xl rounded-e-3xl" src={about} alt=""/>
           </div>
           
           <div className="flex flex-col" style={{ flex:1 }}>
-          <h2 class="my-8 text-2xl font-bold  text-white md:text-4xl">
+          <h2 class="my-8 text-2xl max-sm:text-xl max-sm:text-center font-bold  text-white md:text-4xl">
            Démarches à suivre pour votre demande de visa
       </h2>
-      <div class="grid grid-cols-2 space-y-4 divide-gray-100 dark:divide-gray-800">
+      <div class="grid max-sm:grid-cols-1 grid-cols-2 space-y-4 divide-gray-100 dark:divide-gray-800">
             <div class="mt-8 flex gap-4 md:items-center">
               <div class="w-12 h-12 flex gap-4 rounded-full bg-[#ffcc3321]">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 m-auto text-[#ffcc33]">
@@ -138,13 +146,123 @@ const Demande=(props)=>{
           <h2 className="text-center text-xl font-bold  text-black md:text-4xl">Pourquoi choisir Etudigigue<br/> pour votre demande de visa ?</h2>
          
         </section>
+        <section className="lg:hidden mb-[90px] mt-5">
+        <Swiper
+   centeredSlides={true}
+   loop={true}
+   speed={1000}
+  autoplay={{ 
+    delay:50,
+    disableOnInteraction:false
+   }}
+  
+               slidesPerView={1}
+               
+               spaceBetween={40}
+                 freeMode={true}
+                 pagination={{ 
+                    clickable:false
+                  }}
+                  
+                  modules={[
+                    FreeMode,
+                    Pagination,
+                  ]}
+                  
+                >
+                     
+                                        
+                                    <section
+                                    
+                                    >
+                                  
+                                        
+                               <SwiperSlide className=" relative " >
+                               <div   class="mx-5 relative rounded-3xl    bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+        <div class="relative space-y-8 py-12 p-8">
+          
+
+          <div class="space-y-5">
+            <h5 class="text-xl text-center font-semibold text-gray-700  transition group-hover:text-secondary">
+            Une équipe de professionnels qualifiées
+            </h5>
+            
+          </div>
+          
+        </div>
+      </div>
+                              
+                               </SwiperSlide>
+                               <SwiperSlide className=" relative " >
+                               <div   class=" mx-5 h-50 relative rounded-3xl   bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+        <div class="relative space-y-8 py-12 p-8">
+          
+
+          <div class="space-y-5">
+            <h5 class="text-xl text-center font-semibold text-gray-700  transition group-hover:text-secondary">
+           Accompagnement Complet
+            </h5>
+            
+          </div>
+          
+        </div>
+      </div>
+                              
+                               </SwiperSlide>
+                               <SwiperSlide className=" relative " >
+                               
+                               <div   class="mx-3 relative rounded-3xl   bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+        <div class="relative space-y-8 py-12 p-8">
+          
+
+          <div class="space-y-5">
+            <h5 class="text-xl text-center font-semibold text-gray-700  transition group-hover:text-secondary">
+            Garantie de qualité et de satisfaction
+            </h5>
+            
+          </div>
+          
+        </div>
+      </div>
+                                 
+                               
+                             
+                              
+                               </SwiperSlide>
+                               <SwiperSlide className=" relative " >
+                               
+                               <div   class="mx-3 relative rounded-3xl   bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+        <div class="relative space-y-8 py-12 p-8">
+          
+
+          <div class="space-y-5">
+            <h5 class="text-xl text-center font-semibold text-gray-700  transition group-hover:text-secondary">
+            Transparence dans la procédure
+            </h5>
+            
+          </div>
+          
+        </div>
+      </div>
+                                 
+                               
+                             
+                              
+                               </SwiperSlide>
+                               
+                                    </section>
+                           
+                        
+                            
+                </Swiper>
+        </section>
         <section style={{ 
        
        marginLeft:"80px",
        marginRight:"80px",
        paddingBottom:"120px",
        
-        }}>
+        }} className="max-sm:hidden">
         <div class="mt-16 grid   divide-x gap-4 div divide-gray-100   overflow-hidden  text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
       <div   class=" p-3 flex justify-center items-center relative rounded-3xl   bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
         <div class="relative space-y-8 py-12 p-8">
