@@ -18,8 +18,8 @@ import 'swiper/css/free-mode'
 import 'swiper/css/effect-fade';
 
 import {FreeMode,Pagination} from "swiper/modules"
-import { initialStore } from "../store/store";
-import Modal from "../components/ui/Modal";
+
+
 
 
 

@@ -11,6 +11,13 @@ import Button from "../../components/ui/button";
 import Circle from "../../components/Circle";
 import {motion} from "framer-motion"
 import {defer} from "react-router-dom"
+import {Swiper,SwiperSlide} from "swiper/react"
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/free-mode'
+import 'swiper/css/effect-fade';
+
+import {FreeMode,Pagination} from "swiper/modules"
 const Equivalence=(props)=>{
 
   useEffect(()=>{
@@ -145,13 +152,123 @@ const Equivalence=(props)=>{
           <h2 className="text-center text-xl font-bold  text-black md:text-4xl">Pourquoi choisir<br/> Etudigigue pour l'équivalence de votre diplôme?</h2>
          
         </section>
+        <section className="lg:hidden mb-[90px] mt-5">
+        <Swiper
+   centeredSlides={true}
+   loop={true}
+   speed={1000}
+  autoplay={{ 
+    delay:50,
+    disableOnInteraction:false
+   }}
+  
+               slidesPerView={1}
+               
+               spaceBetween={40}
+                 freeMode={true}
+                 pagination={{ 
+                    clickable:false
+                  }}
+                  
+                  modules={[
+                    FreeMode,
+                    Pagination,
+                  ]}
+                  
+                >
+                     
+                                        
+                                    <section
+                                    
+                                    >
+                                  
+                                        
+                               <SwiperSlide className=" relative " >
+                               <div   class="mx-5 relative rounded-3xl    bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+        <div class="relative space-y-8 py-12 p-8">
+          
+
+          <div class="space-y-5">
+            <h5 class="text-xl text-center font-semibold text-gray-700  transition group-hover:text-secondary">
+            Gain de temps et d'énergie
+            </h5>
+            
+          </div>
+          
+        </div>
+      </div>
+                              
+                               </SwiperSlide>
+                               <SwiperSlide className=" relative " >
+                               <div   class=" mx-5 h-50 relative rounded-3xl   bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+        <div class="relative space-y-8 py-12 p-8">
+          
+
+          <div class="space-y-5">
+            <h5 class="text-xl text-center font-semibold text-gray-700  transition group-hover:text-secondary">
+            Confiance et tranquillité d'esprit 
+            </h5>
+            
+          </div>
+          
+        </div>
+      </div>
+                              
+                               </SwiperSlide>
+                               <SwiperSlide className=" relative " >
+                               
+                               <div   class="mx-3 relative rounded-3xl   bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+        <div class="relative space-y-8 py-12 p-8">
+          
+
+          <div class="space-y-5">
+            <h5 class="text-xl text-center font-semibold text-gray-700  transition group-hover:text-secondary">
+            Réduction du stress et des démarches administratives
+            </h5>
+            
+          </div>
+          
+        </div>
+      </div>
+                                 
+                               
+                             
+                              
+                               </SwiperSlide>
+                               <SwiperSlide className=" relative " >
+                               
+                               <div   class=" p-3 mx-5 relative rounded-3xl   bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+        <div class="relative space-y-8 py-12 p-8">
+          
+
+          <div class="space-y-5">
+            <h5 class="text-xl text-center font-semibold text-gray-700  transition group-hover:text-secondary">
+            Taux de réussite élevé
+            </h5>
+            
+          </div>
+          
+        </div>
+      </div>
+                                 
+                               
+                             
+                              
+                               </SwiperSlide>
+                                    </section>
+                           
+                        
+                            
+                </Swiper>
+        </section>
+        
         <section style={{ 
        
        marginLeft:"80px",
        marginRight:"80px",
        paddingBottom:"120px",
        
-        }}>
+        }} className="max-sm:hidden">
         <div class="mt-16 grid   divide-x gap-4 div divide-gray-100   overflow-hidden  text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
       <div   class=" p-3 relative rounded-3xl   bg-[#ffcc33] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
         <div class="relative space-y-8 py-12 p-8">
