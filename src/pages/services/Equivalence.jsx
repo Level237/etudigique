@@ -12,7 +12,7 @@ import Circle from "../../components/Circle";
 import {motion,useMotionValue,animate} from "framer-motion"
 import {defer} from "react-router-dom"
 import {Swiper,SwiperSlide} from "swiper/react"
-import useMeasure from "react-use-measure"
+
 
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -20,28 +20,14 @@ import 'swiper/css/free-mode'
 import 'swiper/css/effect-fade';
 
 import {FreeMode,Pagination} from "swiper/modules"
+import InfiniteImage from "../../components/InfiniteImage";
 const Equivalence=(props)=>{
-  const [duration,setDuration]=useState(20)
-  let [ref,{width}]=useMeasure()
-  const xTranslation=useMotionValue(0)
+
   useEffect(()=>{
     document.title=props.title
   },[])
 
-  useEffect(()=>{
-    let controls;
-    let finalPosition=-width/2 - 8;
-        controls=animate(xTranslation,[0,finalPosition],{
-            ease:'linear',
-            duration:duration,
-            repeat:Infinity,
-            repeatType:"loop",
-            repeatDelay:0
-        })
-    
 
-    return controls?.stop;
-},[xTranslation,width,duration])
     return (
         <>
         <section className=" bg-[#0000000a]">
@@ -58,18 +44,10 @@ const Equivalence=(props)=>{
       <h2 class="my-8 text-2xl font-bold flex items-center justify-center  text-black md:text-4xl text-center">
       Etudigigue vous facilite la vie !
       </h2>
-      <motion.div
-     ref={ref} style={{ x:xTranslation }}
-      className="flex lg:hidden justify-center">
-       <img className="w-[150px] mr-3 rounded-s-3xl rounded-e-3xl" src={img4}/>
-       <img className="w-[150px] mr-3 rounded-s-3xl rounded-e-3xl" src={img4}/>
-       <img className="w-[150px] mr-3 rounded-s-3xl rounded-e-3xl" src={img4}/>
-      <img className="w-[150px] mr-3 rounded-s-3xl rounded-e-3xl" src={img4}/>
-      <img className="w-[150px] rounded-s-3xl rounded-e-3xl" src={img1}/>
-      <img className="w-[150px] ml-3 rounded-s-3xl rounded-e-3xl" src={img2}/>
-      <img className="w-[150px] ml-3 rounded-s-3xl rounded-e-3xl" src={img2}/>
-      <img className="w-[150px] ml-3 rounded-s-3xl rounded-e-3xl" src={img2}/>
-      </motion.div>
+      <div>
+
+      </div>
+      <InfiniteImage img1={img4} img2={img2} img3={img1} img4={img4}/>
       
       <p class=" text-gray-600 md:w-2/3 max-sm:mt-5 lg:w-3/7 max-sm:text-center">Obtenir l'équivalence de votre diplôme est une étape indispensable pour poursuivre vos études en Belgique. Cette procédure peut s'avérer complexe et fastidieuse, mais Etudigigue est là pour vous simplifier la vie !</p>
     </div>
