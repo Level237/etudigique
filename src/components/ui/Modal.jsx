@@ -1,5 +1,5 @@
 import { initialStore } from "../../store/store"
-
+import {motion} from "framer-motion"
 
 const Modal=(props)=>{
 
@@ -10,10 +10,14 @@ const Modal=(props)=>{
    
     return (
         <>
-     <div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 flex justify-center items-center w-full md:inset-0 h-[calc(100%)] bg-[#000000d7] max-h-full">
+     <div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="max-sm:flex overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 flex justify-center items-center w-full  md:inset-0 h-[calc(100%)] bg-[#000000d7] max-h-full">
     <div class="relative p-4 w-full max-w-2xl max-h-full">
       
-        <div class="relative bg-white rounded-lg shadow dark:bg-gray-200">
+        <motion.div class="relative bg-white max-sm:w-[90vw] rounded-lg shadow dark:bg-gray-200"
+       
+          
+         
+        >
           
             <div class="flex relative items-center flex-col justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
             <button onClick={closeCard} type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="static-modal">
@@ -23,7 +27,7 @@ const Modal=(props)=>{
                     <span class="sr-only">Close modal</span>
                 </button>
                 <div>
-                    <img src={selectUniversity.src} className="h-[45vh] w-[100vw]"/>
+                    <img src={selectUniversity.src} className="h-[45vh] w-[100vw] max-sm:h-[150px] max-sm:w-[250px] "/>
                 </div>
                 <h3 class=" mt-3 text-xl font-semibold text-gray-90">
                 {selectUniversity.title}
@@ -39,7 +43,7 @@ const Modal=(props)=>{
                 <button data-modal-hide="static-modal" type="button" class="text-black bg-[#ffcc33] hover:bg-[#cc3333] hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center   dark:focus:ring-blue-800">Postuler</button>
                 <button onClick={closeCard} data-modal-hide="static-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-[#ffff] focus:outline-none  rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-black hover:bg-[#ffcc33] focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 bg-[#cc3333]  dark:border-gray-600">Annuler</button>
             </div>
-        </div>
+        </motion.div>
     </div>
 </div>
         </>
