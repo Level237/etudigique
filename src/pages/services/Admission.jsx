@@ -10,6 +10,7 @@ import ServiceSlide from "../../components/sections/ServiceSlide"
 import Button from "../../components/ui/button"
 import about from "../../assets/img/admission.png"
 import { useEffect } from "react"
+import InfiniteImage from "../../components/InfiniteImage"
 
 const Admission=(props)=>{
 
@@ -38,25 +39,26 @@ const Admission=(props)=>{
         <path fill-rule="evenodd" d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z" clip-rule="evenodd"></path>
       </svg>
       
-      <h2 class="my-8 mx-[34px] text-2xl font-bold flex items-center justify-center  text-black md:text-4xl text-center">
-      Admission dans une université belge : Etudigigue<br/> vous ouvre les portes !
+      <h2 class="my-8 text-2xl font-bold flex items-center justify-center  text-black md:text-4xl text-center">
+      Admission dans une université belge : Etudigigue<br className="max-sm:hidden"/> vous ouvre les portes !
       </h2>
-      <p class=" text-gray-600 md:w-2/3 lg:w-3/7">Etudier en Belgique est un rêve pour de nombreux étudiants. Avec ses universités de renommée internationale, son système éducatif de qualité et son cadre de vie agréable, la Belgique attire chaque année des milliers d'étudiants du monde entier.</p>
+      <InfiniteImage img1={img4} img2={img2} img3={img1} img4={img4}/>
+      <p class=" text-gray-600 md:w-2/3 max-sm:mt-5 lg:w-3/7 max-sm:text-center">Etudier en Belgique est un rêve pour de nombreux étudiants. Avec ses universités de renommée internationale, son système éducatif de qualité et son cadre de vie agréable, la Belgique attire chaque année des milliers d'étudiants du monde entier.</p>
     </div>
     <div className="flex mt-4 items-center justify-center">
       <div>
 
       </div>
       <div className="grid grid-cols-4 gap-5">
-        <div className="flex flex-col">
+        <div className="flex max-sm:hidden flex-col">
         <img className="w-60 rounded-s-3xl rounded-e-3xl" src={img2} alt="obtention de diplome"/>
         <img className="w-60 mt-8 rounded-s-3xl rounded-e-3xl" src={img3} alt=""/>
         </div>
       
-      <img className="w-60 rounded-s-3xl rounded-e-3xl" src={img4}/>
-      <img className="w-60 rounded-s-3xl rounded-e-3xl" src={img1}/>
+      <img className="w-60 max-sm:hidden rounded-s-3xl rounded-e-3xl" src={img4}/>
+      <img className="w-60 max-sm:hidden rounded-s-3xl rounded-e-3xl" src={img1}/>
       
-      <div className="flex flex-col">
+      <div className="flex max-sm:hidden flex-col">
         <img className="w-60 rounded-s-3xl rounded-e-3xl" src={img5}/>
         <img className="w-60 mt-8 rounded-s-3xl rounded-e-3xl" src={img6}/>
         </div>
@@ -67,17 +69,18 @@ const Admission=(props)=>{
       <Button type="secondary" title="Passez un entretien"/>
     </div>
         </section>
-        <section className=" px-[100px] py-[35px] justify-center bg-[#cc3333] p-[20px]" >
-        <div className="flex">
-        <div style={{ width:"64vh" }} className="mb-[-60px]">
+        <section className=" lg:px-[100px] py-[58px] justify-center bg-[#cc3333] p-[20px]" >
+        <div className="flex max-sm:flex-col">
+        <div style={{ width:"64vh" }} className="mb-[-60px] max-sm:hidden">
           <img className="w-[100%] mt-8 rounded-s-3xl rounded-e-3xl" src={about} alt=""/>
           </div>
           
           <div className="flex flex-col" style={{ flex:1 }}>
-          <h2 class="my-8 text-2xl font-bold  text-white md:text-4xl">
+          <h2 class="my-8 text-2xl max-sm:text-xl max-sm:text-center font-bold  text-white md:text-4xl">
           Etudigigue vous accompagne dans toutes vos démarches d'admission
       </h2>
-      <div class="grid grid-cols-2 space-y-4 divide-gray-100 dark:divide-gray-800">
+     
+      <div class="grid grid-cols-2 max-sm:grid-cols-1 space-y-4 divide-gray-100 dark:divide-gray-800">
             <div class="mt-8 flex gap-4 md:items-center">
               <div class="w-12 h-12 flex gap-4 rounded-full bg-[#ffcc3321]">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 m-auto text-[#ffcc33]">

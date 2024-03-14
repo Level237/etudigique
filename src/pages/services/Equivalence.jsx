@@ -44,9 +44,7 @@ const Equivalence=(props)=>{
       <h2 class="my-8 text-2xl font-bold flex items-center justify-center  text-black md:text-4xl text-center">
       Etudigigue vous facilite la vie !
       </h2>
-      <div>
-
-      </div>
+      
       <InfiniteImage img1={img4} img2={img2} img3={img1} img4={img4}/>
       
       <p class=" text-gray-600 md:w-2/3 max-sm:mt-5 lg:w-3/7 max-sm:text-center">Obtenir l'équivalence de votre diplôme est une étape indispensable pour poursuivre vos études en Belgique. Cette procédure peut s'avérer complexe et fastidieuse, mais Etudigigue est là pour vous simplifier la vie !</p>
