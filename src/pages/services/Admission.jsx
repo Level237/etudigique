@@ -50,7 +50,7 @@ const Admission=(props)=>{
       <h2 class="my-8 text-2xl font-bold flex items-center justify-center  text-black md:text-4xl text-center">
       Admission dans une université belge : Etudigigue<br className="max-sm:hidden"/> vous ouvre les portes !
       </h2>
-      <InfiniteImage img1={img4} img2={img2} img3={img1} img4={img4}/>
+      <InfiniteImage img1={img3} img2={img3} img3={img1} img4={img4}/>
       <p class=" text-gray-600 md:w-2/3 max-sm:mt-5 lg:w-3/7 max-sm:text-center">Etudier en Belgique est un rêve pour de nombreux étudiants. Avec ses universités de renommée internationale, son système éducatif de qualité et son cadre de vie agréable, la Belgique attire chaque année des milliers d'étudiants du monde entier.</p>
     </div>
     <div className="flex mt-4 items-center justify-center">
@@ -77,10 +77,10 @@ const Admission=(props)=>{
       <Button type="secondary" title="Passez un entretien"/>
     </div>
         </section>
-        <section className=" lg:px-[100px] py-[58px] justify-center bg-[#cc3333] p-[20px]" >
+        <section className=" lg:px-[100px] py-[58px] lg:pb-2 justify-center bg-[#cc3333] p-[20px]" >
         <div className="flex max-sm:flex-col">
-        <div style={{ width:"64vh" }} className="mb-[-60px] max-sm:hidden">
-          <img className="w-[100%] mt-8 rounded-s-3xl rounded-e-3xl" src={about} alt=""/>
+        <div style={{ width:"64vh" }} className="mb-[-9px] max-sm:hidden">
+          <img className="w-[100%] mt-12" src={about} alt=""/>
           </div>
           
           <div className="flex flex-col" style={{ flex:1 }}>
