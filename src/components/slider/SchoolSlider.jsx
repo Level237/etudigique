@@ -8,12 +8,11 @@ import { UniversityImages } from "../../data/constants"
 import {motion,AnimatePresence} from "framer-motion"
 import { initialStore } from "../../store/store";
 import Modal from "../ui/Modal";
+import CardImage from "../CardImage";
 const SchoolSlider=()=>{
-    const openCard=initialStore((state)=>state.showUniversity)
+   
     const showCard=initialStore((state)=>state.showCard)
-    const openHover=initialStore((state)=>state.openHoverLay)
-    const closeHover=initialStore((state)=>state.closeHoverLay)
-    const hoverLay=initialStore((state)=>state.showOverlay)
+    
     return (
         <>
         {showCard && <Modal/>}
@@ -46,48 +45,11 @@ const SchoolSlider=()=>{
 
                                     className="relative overflow-hidden  bg-slate-400 rounded-xl flex justify-center items-center"
                                     >
-                                    {UniversityImages.map((image)=>(
+                                    {[...UniversityImages].map((image)=>(
                                         
-                               <SwiperSlide key={image.id} className=" mb-14 " onClick={()=>openCard(image.id)}>
+                               <SwiperSlide key={image.id} className=" mb-14 " >
                                  
-                                   <motion.img
-                                   key={image.id}
-                                   onHoverStart={()=>openHover()}
-                                   onHoverEnd={()=>closeHover()}
-                                   initial={{ 
-                                    filter:"blur(12px)"
-                                    }}
-                               whileInView={{ 
-                                filter:"blur(0px)"
-                                }}
-                               
-                                transition={{ 
-                                    duration:1,
-                                    ease:"circInOut"
-                                 }}
-                               src={image.src}
-                               alt="university photos"
-                               style={{ 
-                               
-                                }}
-                               className="rounded-md object-cover"
-                               />
-                                 <AnimatePresence>
-                                 {hoverLay && (
-                                <motion.div
-                                 
-                                 className="cursor-pointer absolute inset-0 flex justify-center items-center"
-                                 >
-                                     <div className="absolute inset-0 bg-black opacity-75 z-10 ">
-                                         
-                                     </div>
-                                     <div className="bg-white py-3 px-5 z-50 rounded-lg opacity-2">
-                                          Consulter
-                                         </div>
-                                 </motion.div>
-                               )}
-
-                                 </AnimatePresence>
+                                   <CardImage image={image.src} id={image.id}/>
                               
                                  
                                
