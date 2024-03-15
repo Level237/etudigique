@@ -78,9 +78,9 @@ const Homepage=(props)=>{
             <Button  title="En savoir plus" color="white" type="secondary"/>
             </div>
         </section>
-         <section className=" relative flex justify-center mb-20 bg-[#0000000a]" style={{ 
+         <section className=" max-sm:mt-[120px] max-sm:pt-[50px] pb-[100px] mt-[30px] relative flex justify-center mb-20 bg-[#0000000a]" style={{ 
         paddingBottom:"100px",
-          marginTop:"50px"
+         
           }}>
             
          <div

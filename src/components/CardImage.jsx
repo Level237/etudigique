@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {motion,AnimatePresence} from "framer-motion"
 import { initialStore } from "../store/store";
+import { FaArrowAltCircleRight } from 'react-icons/fa'
 export default function CardImage(props) {
 
     const [showOverlay,setShowOverlay]=useState(false)
@@ -28,7 +29,7 @@ export default function CardImage(props) {
            
         >
             <div className='absolute bg-black pointer-events-none opacity-50 h-full w-full'></div>
-            <motion.h1 className='bg-[#ffcc33] font-semibold text-sm z-10 px-5 py-2 rounded-full flex items-center gap-[0.5ch] hover:opacity-75'
+            <motion.h1 style={{ cursor:'pointer' }} className='bg-[#ffcc33] font-semibold text-sm z-10 px-5 py-2 rounded-full flex items-center gap-[0.5ch] hover:opacity-75'
             initial={{ 
                 y:90
              }}
@@ -43,7 +44,7 @@ export default function CardImage(props) {
                 duration:0.3
                 }}
              onClick={()=>openCard(props.id)}
-            >Explorer
+            >Explorer <FaArrowAltCircleRight/>
             </motion.h1>
            
         </motion.div>
@@ -53,7 +54,7 @@ export default function CardImage(props) {
             <div className='absolute bg-black pointer-events-none opacity-50 h-full w-full'></div>
             <h1 className='bg-white font-semibold text-sm z-10 px-5 py-2 rounded-full flex items-center gap-[0.5ch] hover:opacity-75'
              onClick={()=>openCard(props.id)}
-            >Explorer
+            >Explorer <FaArrowAltCircleRight/>
             </h1>
            
         </div>
