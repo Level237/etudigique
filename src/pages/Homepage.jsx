@@ -25,8 +25,6 @@ import {FreeMode,Pagination} from "swiper/modules"
 
 const Homepage=(props)=>{
 
-
- 
   let container = useRef(null); 
   let containerCircle=useRef(null)
   const viewRef=useRef(null)

@@ -4,6 +4,7 @@ import { UniversityImages } from "../data/constants";
 export const initialStore=create((set)=>({
     showCard:false,
     showOverlay:false,
+    showHeader:false,
     selectUniversity:null,
     openCard:()=>{
         set({showCard:true})
@@ -16,6 +17,12 @@ export const initialStore=create((set)=>({
     },
     closeHoverLay:()=>{
         set({showOverlay:false})
+    },
+    openShowHeader:()=>{
+        set({showHeader:true})
+    },
+    closeShowHeader:()=>{
+        set({showHeader:false})
     },
     showUniversity:(id)=>{
         const selectOneUniversity=UniversityImages.find((university)=>university.id===id);

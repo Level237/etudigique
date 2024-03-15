@@ -1,86 +1,49 @@
 import Footer from "../../../components/Footer";
 import { BiX } from "react-icons/bi";
 import Header from "../../../components/Header"
-import {Outlet} from "react-router-dom"
-import {useAnimate,motion} from "framer-motion"
-import React from "react";
+import {Link, Outlet} from "react-router-dom"
+import {useAnimate,motion,AnimatePresence} from "framer-motion"
+import React, { useEffect } from "react";
+import { initialStore } from "../../../store/store";
 const RootLayout=()=>{
+  const showHeader=initialStore((state)=>state.showHeader)
+  const openHeader=initialStore((state)=>state.openShowHeader)
+    const closeHeader=initialStore((state)=>state.closeShowHeader)
     const [scope,animate]=useAnimate();
-    const [scope2,animate2]=useAnimate();
-    const [scope3,animate3]=useAnimate();
-    const [scope4,animate4]=useAnimate();
-    const [scope5,animate5]=useAnimate();
-    const [scope6,animate6]=useAnimate();
-    const open=async()=>{
-        animate2(scope2.current,{filter:"blur(12px)"},{duration:0})
-        await animate(scope.current,{display:'block',x:700},{duration:0})
-        await animate(scope.current,{display:'block',x:150},{duration:0})
-        await animate(scope.current,{display:'block',x:140},{duration:0})
-        await animate(scope.current,{display:'block',x:130},{duration:0})
-        await animate(scope.current,{display:'block',x:120},{duration:0})
-        await animate(scope.current,{display:'block',x:110},{duration:0})
-     await animate(scope.current,{display:'block',x:100},{duration:0})
-     await animate(scope.current,{display:'block',x:90},{duration:0})
-     await animate(scope.current,{display:'block',x:80},{duration:0})
-     await animate(scope.current,{display:'block',x:70},{duration:0})
-     await animate(scope.current,{display:'block',x:60},{duration:0})
-     await animate(scope.current,{display:'block',x:50},{duration:0})
-     await animate(scope.current,{display:'block',x:40},{duration:0})
-     await animate(scope.current,{display:'block',x:30},{duration:0})
-     await animate(scope.current,{display:'block',x:20},{duration:0})
-     await animate(scope.current,{display:'block',x:10},{duration:0})
+
     
-      animate3(scope3.current,{x:-200},{duration:0})
-      animate3(scope3.current,{x:20})
-     animate4(scope4.current,{x:-200})
-      animate4(scope4.current,{x:20})
-     animate5(scope5.current,{x:-200})
-      animate5(scope5.current,{x:20})
-      animate6(scope6.current,{x:-200})
-  animate6(scope6.current,{x:20})
-    }
-    const close=async()=>{
+    const close=()=>{
        
-     await animate(scope.current,{display:'block',x:10},{duration:0})
-    
-     await animate(scope.current,{display:'block',x:20},{duration:0})
-     await animate(scope.current,{display:'block',x:30},{duration:0})
-     await animate(scope.current,{display:'block',x:40},{duration:0})
-     await animate(scope.current,{display:'block',x:50},{duration:0})
-     await animate(scope.current,{display:'block',x:60},{duration:0})
-     await animate(scope.current,{display:'block',x:70},{duration:0})
-     await animate(scope.current,{display:'block',x:80},{duration:0})
-     await animate(scope.current,{display:'block',x:90},{duration:0})
-     await animate(scope.current,{display:'block',x:100},{duration:0})
-     await animate(scope.current,{display:'block',x:110},{duration:0})
-     await animate(scope.current,{display:'block',x:120},{duration:0})
      
-      
-     await animate(scope.current,{display:'block',x:130},{duration:0})
-     await animate(scope.current,{display:'block',x:140},{duration:0})
-     await animate(scope.current,{display:'block',x:150},{duration:0})
-     await animate(scope.current,{display:'block',x:160},{duration:0})
-     await animate(scope.current,{display:'block',x:170},{duration:0})
-     await animate(scope.current,{display:'block',x:190},{duration:0})
-     await animate(scope.current,{display:'block',x:200},{duration:0})
-     await animate(scope.current,{display:'block',x:260},{duration:0})
-     await animate(scope.current,{display:'block',x:350},{duration:0})
-     await animate(scope.current,{display:'block',x:700},{duration:0})
-      animate3(scope3.current,{x:-200},{duration:0})
-      animate3(scope3.current,{x:20})
-     animate4(scope4.current,{x:-200})
-      animate4(scope4.current,{x:20})
-     animate5(scope5.current,{x:-200})
-      animate5(scope5.current,{x:20})
-      animate6(scope6.current,{x:-200})
-  animate6(scope6.current,{x:20})
-  animate2(scope2.current,{filter:"blur(0px)"},{duration:0})
-    }
+      closeHeader()
+    //animate2(scope2.current,{filter:"blur(0px)"},{duration:0})
+  }
+  
+   
+    
     return (
         <>
         
         <section  className="relative overflow-x-hidden">
-        <div ref={scope} id='navbar'style={{ display:"none" }} className=" lg:hidden fixed z-[99999999] top-0 right-0 bottom-[100%]   w-[70vw] h-[100%]  bg-[#cc3333]">
+        <AnimatePresence>
+          {
+           
+            showHeader && (
+              <motion.div 
+              initial={{ 
+                x:600
+               }}
+
+               animate={{ 
+                x:2
+                }}
+                exit={{ 
+                  x:600
+                 }}
+                 transition={{ 
+                  duration:0.7
+                  }}
+              id='navbar' className=" lg:hidden fixed z-[99999999] top-0 right-0 bottom-[100%]   w-[70vw] h-[100%]  bg-[#cc3333]">
         <React.Fragment >
             <div className=" text-white text-4xl">
             <BiX onClick={()=>close()}/>
@@ -100,21 +63,23 @@ const RootLayout=()=>{
             <div className="mt-[12px] ml-10 text-white font-bold text-xl flex flex-col">
             
                 <div >
-                    Homepage
+                  <Link to=''>
+                    Accueil
+                    </Link>
                 </div>
                 <div  className="mt-5">
                   Nos Services
                 </div>
-                <div  ref={scope3} className=" text-sm mt-5">
-                  Equivalence de diplome
+                <div onClick={()=>closeHeader()} className=" text-sm mt-5">
+                <Link to="equivalence-de-diplome" title="Equivalence de Diplome" class="block py-1 px-2 text-[#ffcc00]">Equivalence de diplome</Link>
                 </div>
-                <div  ref={scope4} className=" text-sm mt-1">
+                <div   className="text-sm mt-1 py-1 px-2 text-[#ffcc00]">
                 Admission
                 </div>
-                <div  ref={scope5} className=" text-sm mt-1">
+                <div  className=" text-sm mt-1 py-1 px-2 text-[#ffcc00]">
                  Campus Belgique
                 </div>
-                <div  ref={scope6} className=" text-sm mt-1">
+                <div  className=" text-sm mt-1 py-1 px-2 text-[#ffcc00]">
                  Demande visa
                 </div>
                 <div className="mt-5">
@@ -125,9 +90,13 @@ const RootLayout=()=>{
                 </div>
             </div>
         </React.Fragment>
-</div>
-        <Header open={open}/>
-        <section ref={scope2}>
+
+        </motion.div>
+            )
+          }
+          </AnimatePresence>
+        <Header/>
+        <section >
             <Outlet />
         </section>
             
