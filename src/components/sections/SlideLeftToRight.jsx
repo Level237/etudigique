@@ -20,7 +20,7 @@ const SlideLeftToRight=(props)=>{
             </div> 
           </div>
         </div>
-        <div class="md:5/12 lg:w-1/2">
+        <div class="md:5/12 lg:w-1/2 max-sm:hidden">
           <motion.img className="max-sm:hidden" src={props.image} alt="image" 
           
           style={{ 
