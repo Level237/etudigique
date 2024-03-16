@@ -2,21 +2,19 @@ import Footer from "../../../components/Footer";
 import { BiX } from "react-icons/bi";
 import Header from "../../../components/Header"
 import {Link, Outlet} from "react-router-dom"
-import {useAnimate,motion,AnimatePresence} from "framer-motion"
-import React, { useEffect } from "react";
+import {motion,AnimatePresence} from "framer-motion"
+import React from "react";
 import { initialStore } from "../../../store/store";
 const RootLayout=()=>{
   const showHeader=initialStore((state)=>state.showHeader)
-  const openHeader=initialStore((state)=>state.openShowHeader)
     const closeHeader=initialStore((state)=>state.closeShowHeader)
-    const [scope,animate]=useAnimate();
+    
 
     
     const close=()=>{
        
      
       closeHeader()
-    //animate2(scope2.current,{filter:"blur(0px)"},{duration:0})
   }
   
    
@@ -62,7 +60,7 @@ const RootLayout=()=>{
         
             <div className="mt-[12px] ml-10 text-white font-bold text-xl flex flex-col">
             
-                <div >
+                <div onClick={()=>closeHeader()}>
                   <Link to=''>
                     Accueil
                     </Link>
@@ -73,19 +71,20 @@ const RootLayout=()=>{
                 <div onClick={()=>closeHeader()} className=" text-sm mt-5">
                 <Link to="equivalence-de-diplome" title="Equivalence de Diplome" class="block py-1 px-2 text-[#ffcc00]">Equivalence de diplome</Link>
                 </div>
-                <div   className="text-sm mt-1 py-1 px-2 text-[#ffcc00]">
-                Admission
+                <div onClick={()=>closeHeader()}   className="text-sm mt-1 py-1 px-2 text-[#ffcc00]">
+                <Link to="admission" class="block py-1 px-2">Admission</Link>
                 </div>
-                <div  className=" text-sm mt-1 py-1 px-2 text-[#ffcc00]">
-                 Campus Belgique
+                <div onClick={()=>closeHeader()}  className=" text-sm mt-1 py-1 px-2 text-[#ffcc00]">
+                <Link to="campus-belgique" class="block py-1 px-2">Campus belgique</Link>
                 </div>
-                <div  className=" text-sm mt-1 py-1 px-2 text-[#ffcc00]">
-                 Demande visa
+                <div onClick={()=>closeHeader()} className=" text-sm mt-1 py-1 px-2 text-[#ffcc00]">
+                <Link to="demande-visa" class="block py-1 px-2">Demande de Visa</Link>
                 </div>
-                <div className="mt-5">
-                 A propos de nous
+                <div onClick={()=>closeHeader()} className="mt-5">
+                <Link to='a-propos-de-nous'
+                class=' text-white block'>A Propos de nous</Link>
                 </div>
-                <div className="mt-5">
+                <div onClick={()=>closeHeader()} className="mt-5">
                 Contactez nous
                 </div>
             </div>

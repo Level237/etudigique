@@ -9,7 +9,6 @@ const Header=(props)=>{
   const openHeaderMobile=()=>{
     //props.open()
    openHeader()
-   
   }
     return (
        
