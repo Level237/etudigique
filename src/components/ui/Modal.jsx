@@ -11,11 +11,24 @@ const Modal=(props)=>{
     return (
         <>
      <div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="max-sm:flex overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 flex justify-center items-center w-full  md:inset-0 h-[calc(100%)] bg-[#000000d7] max-h-full">
-    <div class="relative p-4 w-full max-w-2xl max-h-full">
+    <motion.div
+     initial={{ 
+       opacity:0
+     }}
+
+     animate={{ 
+        y:0,
+        opacity:1
+      }}
+
+      exit={{ 
+        y:-200,
+        opacity:0
+       }}
+    class="relative p-4 w-full max-w-2xl max-h-full">
       
-        <motion.div class="relative bg-white max-sm:w-[90vw] rounded-lg shadow dark:bg-gray-200"
+        <div class="relative bg-white max-sm:w-[90vw] rounded-lg shadow dark:bg-gray-200"
        
-          
          
         >
           
@@ -43,8 +56,8 @@ const Modal=(props)=>{
                 <button data-modal-hide="static-modal" type="button" class="text-black bg-[#ffcc33] hover:bg-[#cc3333] hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center   dark:focus:ring-blue-800">Postuler</button>
                 <button onClick={closeCard} data-modal-hide="static-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-[#ffff] focus:outline-none  rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-black hover:bg-[#ffcc33] focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 bg-[#cc3333]  dark:border-gray-600">Annuler</button>
             </div>
-        </motion.div>
-    </div>
+        </div>
+    </motion.div>
 </div>
         </>
     )

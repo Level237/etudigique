@@ -15,7 +15,8 @@ const SchoolSlider=()=>{
     
     return (
         <>
-        {showCard && <Modal/>}
+        <AnimatePresence>{showCard && <Modal/>}</AnimatePresence>
+        
         <section className="mt-10 flex flex-col md:flex-row gap-5 items-center justify-center">
             <div className="w-[100%] md:w-[80%] max-sm:w-[90%]">
                 <Swiper
