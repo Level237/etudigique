@@ -25,7 +25,8 @@ const About=()=>{
       },[])
     return (
         <>
-        <section  className={`relative h-[70vh] bg-center bg-cover bg-[url('assets/img/admission/admission.jpg')] `}>
+        <section className="bg-[#0000000a]">
+        <section  className={`relative h-[70vh] bg-center  bg-cover bg-[url('assets/img/admission/admission.jpg')] `}>
         <div  className="flex items-center justify-center absolute inset-0 bg-[#121533]  w-100 opacity-[0.8]">
           
         </div>
@@ -52,6 +53,7 @@ const About=()=>{
         <h2 className="text-[#cc3333]">Pourquoi Etudigique?</h2>
         <h2 className="font-bold text-4xl">Votre Partenaire pour les études en Belgique</h2>
         <p className="mt-7">Etudigique est votre allié de confiance pour la réalisation de votre projet d'étude en Belgique. Fondée en 2022 par des entrepreneurs camerounais, notre agence d'immigration étudiante est dédiée à faciliter votre parcours académique en Belgique. Nous comprenons que le processus d'immigration des étudiants peut être complexe et intimidant, mais nous sommes là pour le rendre aussi simple et sans stress que possible pour vous.</p>
+        <Circle width="590px" height="590px" bgColor="#ffcc00" opacity="0.2" top="820px" right="-190px"/>
           <div className="mt-7">
             <Button  title="En savoir plus" color="white" type="secondary"/>
           </div>
@@ -134,6 +136,8 @@ const About=()=>{
         
        
         </section>
+        </section>
+        
         </>
     )
 }
