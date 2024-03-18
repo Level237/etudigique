@@ -5,11 +5,12 @@ import { FaArrowAltCircleRight } from 'react-icons/fa'
 export default function CardImage(props) {
 
     const [showOverlay,setShowOverlay]=useState(false)
+    const [showBtn,setShowBtn]=useState(false)
     const openCard=initialStore((state)=>state.showUniversity)
   return (
     <motion.div className='relative overflow-hidden h-[350px] max-sm:h-[205px] min-w-[200px] bg-slate-400 rounded-xl flex justify-center items-center'
-    onHoverStart={()=>setShowOverlay(true)}
-    onHoverEnd={()=>setShowOverlay(false)}
+    onHoverStart={()=>{setShowOverlay(true);setShowBtn(true)}}
+    onHoverEnd={()=>{setShowOverlay(false);setShowBtn(false)}}
     >
         <AnimatePresence>
 
@@ -24,12 +25,13 @@ export default function CardImage(props) {
           }}
 
           exit={{ 
-            opacity:0
+            opacity:1
            }}
            
         >
             <div className='absolute bg-black pointer-events-none opacity-50 h-full w-full'></div>
-            <motion.h1 style={{ cursor:'pointer' }} className='bg-[#ffcc33] font-semibold text-sm z-10 px-5 py-2 rounded-full flex items-center gap-[0.5ch] hover:opacity-75'
+            
+            {showBtn && <motion.h1 style={{ cursor:'pointer' }} className='bg-[#ffcc33] font-semibold text-sm z-10 px-5 py-2 rounded-full flex items-center gap-[0.5ch] hover:opacity-75'
             initial={{ 
                 y:90
              }}
@@ -38,17 +40,21 @@ export default function CardImage(props) {
               }}
 
               exit={{ 
-                y:20
+                opacity:0,
+                y:90
                }}
                transition={{ 
                 duration:0.3
                 }}
              onClick={()=>openCard(props.id)}
             >Explorer <FaArrowAltCircleRight/>
-            </motion.h1>
+            </motion.h1>}
+         
+            
+            
            
         </motion.div>
-     )}
+     )}</AnimatePresence>
          <div className='absolute lg:hidden inset-0 z-10 flex justify-center items-center'
         >
             <div className='absolute bg-black pointer-events-none opacity-50 h-full w-full'></div>
@@ -59,7 +65,7 @@ export default function CardImage(props) {
            
         </div>
       
-      </AnimatePresence>
+      
       <motion.img
        initial={{ 
         filter:"blur(12px)"

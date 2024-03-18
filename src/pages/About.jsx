@@ -59,18 +59,18 @@ const About=()=>{
       
         </section>
 
-        <section className="mt-40 flex justify-center">
-        <div className="flex flex-col flex-1">
-        <h2 className="text-[#cc3333]">Pourquoi Etudigique?</h2>
+        <section className="mt-40 mb-40 items-center  flex justify-center">
+        <div className="flex mx-16 flex-col flex-1">
+        <h2 className="text-[#cc3333]">Nos Engagements</h2>
         <h2 className="font-bold text-4xl">Votre Partenaire pour les études en Belgique</h2>
-        <p className="mt-7">Etudigique est votre allié de confiance pour la réalisation de votre projet d'étude en Belgique. Fondée en 2022 par des entrepreneurs camerounais, notre agence d'immigration étudiante est dédiée à faciliter votre parcours académique en Belgique. Nous comprenons que le processus d'immigration des étudiants peut être complexe et intimidant, mais nous sommes là pour le rendre aussi simple et sans stress que possible pour vous.</p>
+        <p className="mt-7">Chez Etudigique, nous nous engageons à vous accompagner à chaque étape de votre aventure académique en Belgique. Notre équipe dévouée d’avocats et de consultants en immigration expérimentés est là pour vous guider dans toutes les phases du processus, de la demande de visa à la recherche de la formation idéale en Belgique.</p>
           <div className="mt-7">
             <Button  title="En savoir plus" color="white" type="secondary"/>
           </div>
         
        </div>
-       <div className="flex-1 mr-4">
-       <img className="w-full" src={img3}/>
+       <div className="flex-1 mr-10">
+       <img className="w-full rounded-[10%]" src={img3}/>
        </div>
         </section>
         </>
