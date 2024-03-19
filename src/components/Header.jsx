@@ -41,8 +41,8 @@ const Header=(props)=>{
             <li class='max-lg:border-b max-lg:py-2 px-3'><Link to='a-propos-de-nous'
                 class='lg:hover:text-[#ffcc00] text-white block font-semibold text-[15px]'>A Propos de nous</Link>
             </li>
-            <li class='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
-                class='lg:hover:text-[#ffcc00] text-white block font-semibold text-[15px]'>Contact</a>
+            <li class='max-lg:border-b max-lg:py-2 px-3'><Link to='contactez-nous'
+                class='lg:hover:text-[#ffcc00] text-white block font-semibold text-[15px]'>Contact</Link>
             </li>
             <li class='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
                 class='lg:hover:text-[#ffcc00] text-white block font-semibold text-[15px]'>Blog</a>

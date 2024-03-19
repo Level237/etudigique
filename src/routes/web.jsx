@@ -7,6 +7,7 @@ import Campus from "../pages/services/Campus"
 import Demande from "../pages/services/Demande"
 import React,{ Suspense, lazy } from "react"
 import About from "../pages/About"
+import Contact from "../pages/Contact"
 
 const EquivalencePage=lazy(()=>{
     return Promise.all([
@@ -48,6 +49,10 @@ export const routes=createBrowserRouter([
             },{
                 path:"a-propos-de-nous",
                 element:<About/>
+            },
+            {
+                path:"contactez-nous",
+                element:<Contact/>
             }
         ]
     }
