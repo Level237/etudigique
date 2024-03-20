@@ -45,7 +45,10 @@ const Header=(props)=>{
                 class='lg:hover:text-[#ffcc00] text-white block font-semibold text-[15px]'>Contact</Link>
             </li>
            
-            
+            <li class='max-lg:border-b max-lg:py-2 px-3'><Link to='témoignages'
+                class='lg:hover:text-[#ffcc00] text-white block font-semibold text-[15px]'>Témoignages</Link>
+            </li>
+           
             
           </ul>
           
