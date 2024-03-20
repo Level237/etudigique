@@ -31,8 +31,8 @@ const About=()=>{
           
         </div>
         <div  className="absolute inset-0 flex flex-col items-center justify-center">
-        <h2 className="text-5xl font-bold text-[#ffcc33]"> A propos de nous</h2>
-        <p className="text-center text-white mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        <h2 className="text-5xl font-bold text-[#ffcc33] text-center"> A propos de nous</h2>
+        <p className="text-center text-white mt-3 max-sm:mx-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum has been the industry's <br/>standard dummy text ever since the
         1500s </p>
         </div>
@@ -42,14 +42,14 @@ const About=()=>{
         <div  ></div>
         </section>
         <Circle width="470px" height="470px" bgColor="#ffcc00" opacity="0.2" top="200px" left="-150px"/>
-        <section className="flex justify-center gap-10 mx-36 mt-36">
-          <div className="w-[390px]">
+        <section className="flex max-sm:flex-col max-sm:mx-0  justify-center gap-10 mx-36 mt-36">
+          <div className="w-[390px] max-sm:hidden">
             <div className="w-full relative top-0">
             <img className="w-full" src={img1}/>
             <img className="w-full absolute inset-0 z-20  left-32 top-36" src={img2}/>
             </div>
           </div>
-       <div className="flex flex-col flex-1 ml-32">
+       <div className="flex flex-col flex-1 ml-32 max-sm:ml-5">
         <h2 className="text-[#cc3333]">Pourquoi Etudigique?</h2>
         <h2 className="font-bold text-4xl">Votre Partenaire pour les études en Belgique</h2>
         <p className="mt-7">Etudigique est votre allié de confiance pour la réalisation de votre projet d'étude en Belgique. Fondée en 2022 par des entrepreneurs camerounais, notre agence d'immigration étudiante est dédiée à faciliter votre parcours académique en Belgique. Nous comprenons que le processus d'immigration des étudiants peut être complexe et intimidant, mais nous sommes là pour le rendre aussi simple et sans stress que possible pour vous.</p>
@@ -62,8 +62,8 @@ const About=()=>{
       
         </section>
 
-        <section className="mt-40 mb-40 items-center  flex justify-center">
-        <div className="flex mx-16 flex-col flex-1">
+        <section className="mt-40 mb-40 max-sm:mt-12 items-center max-sm:flex-col  flex justify-center">
+        <div className="flex mx-16 max-sm:mx-5 flex-col flex-1">
         <h2 className="text-[#cc3333]">Nos Engagements</h2>
         <h2 className="font-bold text-4xl">La prise en main pour une bonne integration sociale en Belgique</h2>
         <p className="mt-7">Chez Etudigique, nous nous engageons à vous accompagner à chaque étape de votre aventure académique en Belgique. Notre équipe dévouée d’avocats et de consultants en immigration expérimentés est là pour vous guider dans toutes les phases du processus, de la demande de visa à la recherche de la formation idéale en Belgique.</p>
@@ -72,7 +72,7 @@ const About=()=>{
           </div>
         
        </div>
-       <div className="flex-1 mr-10">
+       <div className="flex-1 max-sm:hidden mr-10">
        <img className="w-full rounded-[10%]" src={img3}/>
        </div>
         </section>
