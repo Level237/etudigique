@@ -4,7 +4,7 @@ const  Contact=()=> {
   return (
     <>
     <section className="bg-[#0000000a]">
-    <section  className={`relative h-[70vh] bg-center  bg-cover bg-[url('assets/img/admission/admission.jpg')] mb-40`}>
+    <section  className={`relative h-[70vh] bg-center max-sm:mb-10  bg-cover bg-[url('assets/img/admission/admission.jpg')] mb-40`}>
         <div  className="flex items-center justify-center absolute inset-0 bg-[#121533]  w-100 opacity-[0.8]">
           
         </div>
@@ -15,14 +15,14 @@ const  Contact=()=> {
         1500s </p>
         </div>
         </section>
-        <section className='mx-40 pb-40'>
+        <section className='mx-40 pb-40 max-sm:mx-5'>
            
             <div>
                 <form>
     <div class="grid gap-6 mb-6 md:grid-cols-2">
         <div>
             <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 ">Nom</label>
-            <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required />
+            <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 max-sm:p-5  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required />
         </div>
         <div>
             <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 text-black">Prenom</label>
