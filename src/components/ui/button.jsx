@@ -1,5 +1,5 @@
 import {motion} from "framer-motion"
-
+import { Link } from "react-router-dom";
 const Button=(props)=>{
 
     let bgBtn="#000000"
@@ -17,14 +17,14 @@ const Button=(props)=>{
     let classeBtn=`inline-flex items-center bg-[${bgBtn}] text-${colorBtn} justify-center px-5 py-3 mr-3 text-base font-medium text-center   rounded-lg   focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 `
     return (
         <>
-        <motion.a 
+        <Link
         whileHover={{ 
             background:"#ffcc00 none",
             color:"black",
             rotate:"1deg",
             scale:1.01
          }}
-        href="#" className={classeBtn}>
+        to={props.link} className={classeBtn}>
                 {props.title}
                 <div style={{ 
                     marginLeft:"3px"
@@ -32,7 +32,7 @@ const Button=(props)=>{
                     {props.icon ?? null}
                 </div>
                 
-            </motion.a>
+            </Link>
         </>
     )
 }

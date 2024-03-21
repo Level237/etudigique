@@ -18,6 +18,7 @@ import 'swiper/css/free-mode'
 import 'swiper/css/effect-fade';
 
 import {FreeMode,Pagination} from "swiper/modules"
+import { Link } from "react-router-dom";
 
 
 
@@ -73,7 +74,7 @@ const Homepage=(props)=>{
         <section>
             <SchoolSlider/>
             <div className="text-center">
-            <Button  title="En savoir plus" color="white" type="secondary"/>
+            <Button link="campus-belgique"  title="En savoir plus" color="white" type="secondary"/>
             </div>
         </section>
          <section className=" max-sm:mt-[120px] max-sm:pt-[50px] pb-[100px] mt-[30px] relative flex justify-center mb-20 bg-[#0000000a]" style={{ 
@@ -356,7 +357,7 @@ const Homepage=(props)=>{
         </p>
         <div class="flex flex-wrap justify-center gap-6">
         <Button title="Rejoignez nous" type="primary"  color="black" />
-        <Button title="Témoignages" type='default'  color="black"  />
+        <Link to="témoignages" className="inline-flex items-center bg-[#cc3333] text-white justify-center px-5 py-3 mr-3 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 ">Témoignages</Link>
          
         </div>
       </div>
