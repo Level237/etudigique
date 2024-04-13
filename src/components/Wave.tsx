@@ -4,7 +4,7 @@ type WaveType={
     deg:number,
     color:string,
     paused:boolean,
-    opacity:number,
+    opacity:string,
     amplitude:number,
     point:number
 }

@@ -6,7 +6,8 @@ type btnType={
     type:string,
     link:string,
     title:string,
-    icon?:string
+    color:string,
+    icon?:React.ReactNode
 }
 const Button=(props:btnType)=>{
 
