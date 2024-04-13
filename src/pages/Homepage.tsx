@@ -1,10 +1,10 @@
-import React from 'react'
 
+import HeroRoot from "../components/heroes/Hero-root.js"
 
 const Homepage=()=> {
   return (
     <div>
-      
+      <HeroRoot/>
     </div>
   )
 }
