@@ -9,7 +9,7 @@ const RootLayout=()=>{
     return (
         <>
         
-        <section  className="relative overflow-x-hidden">
+        <section  className="relative overflow-x-hidden overflow-y-hidden">
         
         <Header/>
         <section >
