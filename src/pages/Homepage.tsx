@@ -13,15 +13,20 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/free-mode'
 import 'swiper/css/effect-fade';
+import boss from "../../src/assets/img/boss.jpg"
 import Lottie from "lottie-web"
 import animationData from "../assets/loties/student.json"
 import animationDataCircle from "../assets/loties/gradient.json"
 
 import {FreeMode,Pagination} from "swiper/modules"
+import { Link } from "react-router-dom";
 const Homepage=()=> {
   
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const viewRef=useRef<any>(null)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const container = useRef<any>(null); 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const containerCircle=useRef<any>(null)
     
       useEffect(()=>{
@@ -131,6 +136,7 @@ const Homepage=()=> {
       <motion.div
         ref={viewRef}  className=" p-3 relative rounded-3xl   bg-[#cc3333] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
         <div className="relative space-y-8 py-12 p-8">
+        
           <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" className="w-12" width="512" height="512" alt="burger illustration"/>
 
           <div className="space-y-5">
@@ -289,6 +295,39 @@ const Homepage=()=> {
                                     </section>
                 </Swiper>
    </div>
+</div>
+</div>
+        </section>
+
+        <section style={{ 
+          marginTop:"0px"
+         }} className="bg-[#0000000a]">
+          <div className="relative py-16">
+  <div aria-hidden="true" className="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+    <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-[#ffcc00] from-[#000000]"></div>
+    <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-40 to-sky-30 to-indigo-60"></div>
+  </div>
+  <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+    <div className="relative">
+      <div className="flex items-center justify-center -space-x-2">
+        <img loading="lazy" width="400" height="400" src={boss} alt="member photo" className="h-8 w-8 rounded-full object-cover"/>
+        <img loading="lazy" width="200" height="200" src={boss} alt="member photo" className="h-12 w-12 rounded-full object-cover"/>
+        <img loading="lazy" width="200" height="200" src={boss} alt="member photo" className="z-10 h-16 w-16 rounded-full object-cover"/>
+        <img loading="lazy" width="200" height="200" src={boss} alt="member photo" className="relative h-12 w-12 rounded-full object-cover"/>
+        <img loading="lazy" width="200" height="200" src={boss} alt="member photo" className="h-8 w-8 rounded-full object-cover"/>
+      </div>
+      <div className="mt-6 m-auto space-y-6 md:w-8/12 lg:w-7/12">
+        <h1 className="text-center text-4xl font-bold text-gray-800  md:text-5xl">Commencez l'aventure avec Etudigique</h1>
+        <p className="text-center text-xl text-gray-60">
+          Plus de 10 nouveaux étudiants rejoignent Etudigique pour l'obtention de leur visa étudiant
+        </p>
+        <div className="flex flex-wrap justify-center gap-6">
+        <Button title="Rejoignez nous" type="primary" link="contactez-nous"  color="black" />
+        <Link to="témoignages" className="inline-flex items-center bg-[#cc3333] text-white justify-center px-5 py-3 mr-3 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 ">Témoignages</Link>
+         
+        </div>
+      </div>
+    </div>
 </div>
 </div>
         </section>
