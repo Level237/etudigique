@@ -16,10 +16,10 @@ export default function InfiniteImage(props) {
             repeat:Infinity,
             repeatType:"loop",
             repeatDelay:0
-        });
+        }).stop;
 
 
-        return controls?.stop;
+      
     },[xTranslation,width,duration])
   return (
     <>

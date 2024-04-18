@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import RootLayout from '../pages/layouts/Root';
 import Homepage from '../pages/Homepage';
+import Equivalence from "../pages/services/Equivalence";
 
 
 export const routes=createBrowserRouter([
@@ -11,6 +12,9 @@ export const routes=createBrowserRouter([
             {
                 path:'',
                 element:<Homepage/>
+            },{
+                path:'equivalence-de-diplome',
+                element:<Equivalence/>
             }
         ]
        
