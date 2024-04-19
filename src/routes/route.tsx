@@ -5,6 +5,7 @@ import Equivalence from "../pages/services/Equivalence";
 import Admission from "../pages/services/Admission";
 import Campus from "../pages/services/Campus";
 import Demande from "../pages/services/Demande";
+import About from "../pages/About";
 
 
 export const routes=createBrowserRouter([
@@ -27,6 +28,10 @@ export const routes=createBrowserRouter([
             },{
                 path:"demande-visa",
                 element:<Demande title="Demande de Visa"/>
+            },
+            {
+                path:"a-propos-de-nous",
+                element:<About/>
             },
         ]
        
