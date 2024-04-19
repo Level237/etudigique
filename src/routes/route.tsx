@@ -6,6 +6,7 @@ import Admission from "../pages/services/Admission";
 import Campus from "../pages/services/Campus";
 import Demande from "../pages/services/Demande";
 import About from "../pages/About";
+import Contact from "../pages/Contact";
 
 
 export const routes=createBrowserRouter([
@@ -32,6 +33,9 @@ export const routes=createBrowserRouter([
             {
                 path:"a-propos-de-nous",
                 element:<About/>
+            }, {
+                path:"contactez-nous",
+                element:<Contact/>
             },
         ]
        
