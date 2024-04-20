@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
 import logowhite from "../assets/img/logowhite.png"
+import { initialStore } from "../store/store";
 
 
 
 
 const Header=()=>{
  
+  const openHeader=initialStore((state)=>state.openShowHeader)
   const openHeaderMobile=()=>{
     //props.open()
-   
+   openHeader()
   }
     return (
        
