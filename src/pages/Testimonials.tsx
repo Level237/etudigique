@@ -1,12 +1,10 @@
-import { useEffect } from "react";
+
 import { Helmet } from 'react-helmet';
 
 
-const Testimonial=(props)=>{
+const Testimonial=()=>{
 
-    useEffect(()=>{
-        document.title=props.title
-    },[])
+  
     return (
         <>
 

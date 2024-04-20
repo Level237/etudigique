@@ -39,7 +39,7 @@ export const routes=createBrowserRouter([
                 element:<Contact title="Contactez nous"/>
             }, {
                 path:"témoignages",
-                element:<Testimonial title="Témoignages"/>
+                element:<Testimonial/>
             }
         ]
        
