@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from 'react-helmet';
 
 
 const Testimonial=(props)=>{
@@ -8,6 +9,18 @@ const Testimonial=(props)=>{
     },[])
     return (
         <>
+
+<Helmet>
+  <title>Nos Témoignages</title>
+  <meta name="description" content="Ils nous font confiance pour l'obtention de leur visa etudiant
+" />
+<meta property="og:title" content="Témoignages" />
+  <meta property="og:description" content="Ils nous font confiance pour l'obtention de leur visa etudiant" />
+  <meta property="og:image" content="/testimonials/testimonial1.png" />
+  <meta property="og:url" content="etudigique.com/témoignages" />
+  <meta property="og:type" content="website" />
+
+</Helmet>
         <section className="bg-white dark:bg-gray-900">
   <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
       <div className="mx-auto max-w-screen-sm">
