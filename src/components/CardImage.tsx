@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {motion,AnimatePresence} from "framer-motion"
 
 import { FaArrowAltCircleRight } from 'react-icons/fa'
+import { initialStore } from '../store/store'
 
 type CardImageType={
     image:string,
@@ -11,7 +12,7 @@ export default function CardImage(props:CardImageType) {
 
     const [showOverlay,setShowOverlay]=useState(false)
     const [showBtn,setShowBtn]=useState(false)
-    
+    const openCard=initialStore((state)=>state.showUniversity)
   return (
     <motion.div className='relative overflow-hidden h-[350px] max-sm:h-[205px] min-w-[200px] bg-slate-400 rounded-xl flex justify-center items-center'
     onHoverStart={()=>{setShowOverlay(true);setShowBtn(true)}}
@@ -32,7 +33,7 @@ export default function CardImage(props:CardImageType) {
           exit={{ 
             opacity:1
            }}
-           
+
         >
             <div className='absolute bg-black pointer-events-none opacity-50 h-full w-full'></div>
             
@@ -51,13 +52,9 @@ export default function CardImage(props:CardImageType) {
                transition={{ 
                 duration:0.3
                 }}
-             
+                onClick={()=>openCard(props.id)}
             >Explorer <FaArrowAltCircleRight/>
             </motion.h1>}
-         
-            
-            
-           
         </motion.div>
      )}</AnimatePresence>
          <div className='absolute lg:hidden inset-0 z-10 flex justify-center items-center'

@@ -1,7 +1,20 @@
 import { create } from "zustand";
 import { UniversityImages } from "../data/constants";
 
-export const initialStore=create((set)=>({
+interface initialStoreState{
+    showCard:boolean;
+    showOverlay:boolean;
+    showHeader:boolean;
+    selectUniversity:object,
+    openCard:()=>void;
+    closeCard:()=>void;
+    openHoverLay:()=>void;
+    closeHoverLay:()=>void;
+    openShowHeader:()=>void;
+    closeShowHeader:()=>void;
+    showUniversity:(id:number)=>void
+}
+export const initialStore=create<initialStoreState>((set)=>({
     showCard:false,
     showOverlay:false,
     showHeader:false,
