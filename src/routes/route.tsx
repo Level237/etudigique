@@ -23,7 +23,7 @@ export const routes=createBrowserRouter([
                 element:<Equivalence title="Equivalence de diplome"/>
             },{
                 path:'admission',
-                element:<Admission title="Admission"/>
+                element:<Admission/>
             },{
                 path:'campus-belgique',
                 element:<Campus/>

@@ -8,7 +8,6 @@ import img6 from "../../assets/img/admission/admission7.jpg"
 import Circle from "../../components/Circle"
 import Button from "../../components/ui/button"
 import about from "../../assets/img/admission.png"
-import { useEffect } from "react"
 import InfiniteImage from "../../components/InfiniteImage"
 import {Swiper,SwiperSlide} from "swiper/react"
 
@@ -19,13 +18,26 @@ import 'swiper/css/free-mode'
 import 'swiper/css/effect-fade';
 
 import {FreeMode,Pagination} from "swiper/modules"
-const Admission=(props)=>{
+import { Helmet } from 'react-helmet';
+const Admission=()=>{
 
-    useEffect(()=>{
-        document.title=props.title
-      },[])
+ 
     return (
         <>
+
+<Helmet>
+  <title>Admission</title>
+  <meta name="description" content="Admission dans une université belge : Etudigigue
+vous ouvre les portes !.
+" />
+<meta property="og:title" content="Admission" />
+  <meta property="og:description" content="Admission dans une université belge : Etudigigue
+vous ouvre les portes !" />
+  <meta property="og:image" content={about} />
+  <meta property="og:url" content="etudigique.com/admission" />
+  <meta property="og:type" content="website" />
+
+</Helmet>
         <section className=" bg-[#0000000a]">
         <section className={`relative h-[50vh] bg-center bg-cover bg-[url('assets/img/admission/admission.jpg')] `}>
         <div className="flex items-center justify-center absolute inset-0 bg-[#ffcc00] w-100 opacity-[0.7]">
