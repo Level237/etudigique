@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import ServiceSlide from "../../components/sections/ServiceSlide";
 import img1 from "../../assets/img/equivalence/equivalence1.jpg"
 import img2 from "../../assets/img/equivalence/equivalence2.jpg"
@@ -21,15 +21,26 @@ import 'swiper/css/effect-fade';
 
 import {FreeMode,Pagination} from "swiper/modules"
 import InfiniteImage from "../../components/InfiniteImage";
-const Equivalence=(props)=>{
+import { Helmet } from 'react-helmet';
+const Equivalence=()=>{
 
-  useEffect(()=>{
-    document.title=props.title
-  },[])
+ 
 
 
     return (
         <>
+
+<Helmet>
+  <title>Equivalence de Diplome</title>
+  <meta name="description" content="Obtenir l'équivalence de votre diplôme est une étape indispensable pour poursuivre vos études en Belgique.
+" />
+<meta property="og:title" content="Equivalence de Diplome" />
+  <meta property="og:description" content="Obtenir l'équivalence de votre diplôme est une étape indispensable pour poursuivre vos études en Belgique." />
+  <meta property="og:image" content={img2} />
+  <meta property="og:url" content="etudigique.com/equivalence-de-diplome" />
+  <meta property="og:type" content="website" />
+
+</Helmet>
         <section className=" bg-[#0000000a]">
         <ServiceSlide title="Equivalence de Diplome" />
        

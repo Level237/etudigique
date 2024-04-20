@@ -20,7 +20,7 @@ export const routes=createBrowserRouter([
                 element:<Homepage/>
             },{
                 path:'equivalence-de-diplome',
-                element:<Equivalence title="Equivalence de diplome"/>
+                element:<Equivalence/>
             },{
                 path:'admission',
                 element:<Admission/>
