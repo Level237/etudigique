@@ -33,7 +33,7 @@ export const routes=createBrowserRouter([
             },
             {
                 path:"a-propos-de-nous",
-                element:<About title="A propos de Nous"/>
+                element:<About/>
             }, {
                 path:"contactez-nous",
                 element:<Contact/>

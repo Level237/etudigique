@@ -6,8 +6,9 @@ import img1 from "../assets/img/about/about.png"
 import img2 from "../assets/img/about/about1.jpg"
 import img3 from "../assets/img/admission/admission6.jpg"
 import Button from "../components/ui/button";
+import { Helmet } from 'react-helmet';
 
-const About=(props)=>{
+const About=()=>{
     const container = useRef(null); 
     useEffect(()=>{
         
@@ -21,10 +22,21 @@ const About=(props)=>{
         
         container.current=null
         
-        document.title=props.title
+       
       },[])
     return (
         <>
+        <Helmet>
+  <title>A propos de Nous</title>
+  <meta name="description" content="Étudier en Belgique est un rêve pour de nombreux étudiants. Offrant un système éducatif de qualité des universités renommées et un cadre de vie agréable, la Belgique attire chaque année des milliers d'étudiants du monde entier.
+" />
+<meta property="og:title" content="Etudigique:Réalisez votre projet d'étude en Belgique" />
+  <meta property="og:description" content="Étudier en Belgique est un rêve pour de nombreux étudiants. Offrant un système éducatif de qualité des universités renommées et un cadre de vie agréable, la Belgique attire chaque année des milliers d'étudiants du monde entier." />
+  <meta property="og:image" content="/campus3.jpg" />
+  <meta property="og:url" content="etudigique.com/a-propos-de-nous" />
+  <meta property="og:type" content="website" />
+
+</Helmet>
         <section className="bg-[#0000000a]">
         <section  className={`relative h-[70vh] bg-center  bg-cover bg-[url('assets/img/admission/admission.jpg')] `}>
         <div  className="flex items-center justify-center absolute inset-0 bg-[#121533]  w-100 opacity-[0.8]">
