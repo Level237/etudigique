@@ -29,7 +29,7 @@ export const routes=createBrowserRouter([
                 element:<Campus title="Campus Belgique"/>
             },{
                 path:"demande-visa",
-                element:<Demande title="Demande de Visa"/>
+                element:<Demande/>
             },
             {
                 path:"a-propos-de-nous",

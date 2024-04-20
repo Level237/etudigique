@@ -7,7 +7,7 @@ import img6 from "../../assets/img/visa/visa3.jpg"
 import Circle from "../../components/Circle"
 import Button from "../../components/ui/button"
 import about from "../../assets/img/visa/visaSlide.png"
-import { useEffect } from "react"
+
 import InfiniteImage from "../../components/InfiniteImage"
 import {Swiper,SwiperSlide} from "swiper/react"
 import {FreeMode,Pagination} from "swiper/modules"
@@ -16,14 +16,24 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/free-mode'
 import 'swiper/css/effect-fade';
-const Demande=(props)=>{
+import { Helmet } from 'react-helmet';
+const Demande=()=>{
 
 
-    useEffect(()=>{
-        document.title=props.title
-      },[])
+  
     return (
         <>
+        <Helmet>
+  <title>Demande de Visa</title>
+  <meta name="description" content="Obtenir un visa d'études pour la Belgique peut s'avérer un véritable parcours du combattant.
+" />
+<meta property="og:title" content="Demande de Visa" />
+  <meta property="og:description" content="Obtenir un visa d'études pour la Belgique peut s'avérer un véritable parcours du combattant." />
+  <meta property="og:image" content={img6} />
+  <meta property="og:url" content="etudigique.com/demande-visa" />
+  <meta property="og:type" content="website" />
+
+</Helmet>
         <section className=" bg-[#0000000a]">
         <section className={`relative h-[50vh] bg-left bg-cover bg-[url('assets/img/visa/visa.jpg')] `}>
         <div className="flex items-center justify-center absolute inset-0 bg-[#ffcc00] w-100 opacity-[0.7]">
