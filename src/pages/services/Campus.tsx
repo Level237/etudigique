@@ -8,7 +8,6 @@ import img6 from "../../assets/img/campus/campus6.jpg"
 import Circle from "../../components/Circle"
 import Button from "../../components/ui/button"
 import about from "../../assets/img/campus/campusSlide.png"
-import { useEffect } from "react"
 import InfiniteImage from "../../components/InfiniteImage"
 import {Swiper,SwiperSlide} from "swiper/react"
 import {FreeMode,Pagination} from "swiper/modules"
@@ -17,13 +16,24 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/free-mode'
 import 'swiper/css/effect-fade';
-const Campus=(props)=>{
+import { Helmet } from 'react-helmet';
+const Campus=()=>{
 
-    useEffect(()=>{
-        document.title=props.title
-      },[])
     return (
         <>
+        <Helmet>
+  <title>Campus Belgique</title>
+  <meta name="description" content="Etudigigue vous facilite l'accès
+dans les plus grandes écoles en Belgique !.
+" />
+<meta property="og:title" content="Campus Belgique" />
+  <meta property="og:description" content="Etudigigue vous facilite l'accès
+dans les plus grandes écoles en Belgique !" />
+  <meta property="og:image" content={img2} />
+  <meta property="og:url" content="etudigique.com/campus-belgique" />
+  <meta property="og:type" content="website" />
+
+</Helmet>
         <section className=" bg-[#0000000a]">
         <section className={`relative h-[50vh] bg-left bg-cover bg-[url('assets/img/campus/campus.jpg')] `}>
         <div className="flex items-center justify-center absolute inset-0 bg-[#ffcc00] w-100 opacity-[0.7]">

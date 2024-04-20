@@ -26,7 +26,7 @@ export const routes=createBrowserRouter([
                 element:<Admission title="Admission"/>
             },{
                 path:'campus-belgique',
-                element:<Campus title="Campus Belgique"/>
+                element:<Campus/>
             },{
                 path:"demande-visa",
                 element:<Demande/>
