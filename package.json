@@ -12,6 +12,7 @@
   "dependencies": {
     "emailjs-com": "^3.2.0",
     "framer-motion": "^11.0.28",
+    "lottie-web": "^5.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",

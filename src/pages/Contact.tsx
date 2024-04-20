@@ -1,16 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import emailjs from 'emailjs-com';
 const  Contact=()=> {
-    const SERVICE_ID = "aJwnIQli5p9p7DRK4VXXF";
-const TEMPLATE_ID = "template_1fq17wq";
-const PUBLIC_KEY = "QwNvfT3Vx-pl8jKkv";
+
+    const [showMessage,setShowMessage]=useState<boolean>(false);
+    const SERVICE_ID = "service_bwhu0oq";
+const TEMPLATE_ID = "template_9oi3gbi";
+const PUBLIC_KEY = "_9zAUz5CyhVscPzRE";
 
 const handleOnSubmit = (e) => {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
       .then((result) => {
         console.log(result.text);
-        alert('Message Sent Successfully')
+        setShowMessage(true)
+        //alert('Message Sent Successfully')
       }, (error) => {
         console.log(error.text);
         alert('Something went wrong!')
@@ -33,9 +36,10 @@ const handleOnSubmit = (e) => {
         </div>
         </section>
         <section className='mx-40 pb-40 max-sm:mx-5'>
-           
+        
             <div>
                 <form onSubmit={handleOnSubmit}>
+                    {showMessage && <div className="bg-[#ffcc33] mb-5 p-5 shadow-lg max-sm:hidden">Votre message à été envoyé avec succès</div>}
     <div className="grid gap-6 mb-6 md:grid-cols-2">
         <div>
             <label htmlFor="first_name" className="block mb-2 text-sm font-medium text-gray-900 ">Nom</label>
