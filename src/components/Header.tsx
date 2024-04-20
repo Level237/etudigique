@@ -17,6 +17,7 @@ const Header=()=>{
 
        
         <header   className='w-[100%] sticky top-0 z-50  py-4 px-4 sm:px-10 bg-[#121533] font-[sans-serif] min-h-[70px]' >
+
         <div className='flex flex-wrap items-center gap-x-2 max-lg:gap-y-6'>
           <Link to=""><img src={logowhite} alt="logo" className='w-60' />
           </Link>

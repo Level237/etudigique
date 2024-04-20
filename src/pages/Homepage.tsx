@@ -17,10 +17,10 @@ import boss from "../../src/assets/img/boss.jpg"
 import Lottie from "lottie-web"
 import animationData from "../assets/loties/student.json"
 import animationDataCircle from "../assets/loties/gradient.json"
-
+import { Helmet } from 'react-helmet';
 import {FreeMode,Pagination} from "swiper/modules"
 import { Link } from "react-router-dom";
-const Homepage=(props)=> {
+const Homepage=()=> {
   
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const viewRef=useRef<any>(null)
@@ -47,11 +47,22 @@ const Homepage=(props)=> {
         })
         containerCircle.current=null
         container.current=null;
-        document.title=props.title
+      
       },[])
     
   return (
     <div>
+      <Helmet>
+  <title>Etudigique:Réalisez votre projet d'étude en Belgique</title>
+  <meta name="description" content="Étudier en Belgique est un rêve pour de nombreux étudiants. Offrant un système éducatif de qualité des universités renommées et un cadre de vie agréable, la Belgique attire chaque année des milliers d'étudiants du monde entier.
+" />
+<meta property="og:title" content="Etudigique:Réalisez votre projet d'étude en Belgique" />
+  <meta property="og:description" content="Étudier en Belgique est un rêve pour de nombreux étudiants. Offrant un système éducatif de qualité des universités renommées et un cadre de vie agréable, la Belgique attire chaque année des milliers d'étudiants du monde entier." />
+  <meta property="og:image" content="/campus.jpg" />
+  <meta property="og:url" content="etudigique.com" />
+  <meta property="og:type" content="website" />
+
+</Helmet>
       <HeroRoot/>
       <section className="mt-20" style={{ 
         display:"flex",
