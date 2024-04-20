@@ -5,7 +5,11 @@ interface initialStoreState{
     showCard:boolean;
     showOverlay:boolean;
     showHeader:boolean;
-    selectUniversity:object,
+    selectUniversity:{
+        src:string;
+        id:number;
+        title:string
+    },
     openCard:()=>void;
     closeCard:()=>void;
     openHoverLay:()=>void;

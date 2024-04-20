@@ -9,14 +9,17 @@ import { UniversityImages } from "../data/constants"
 
 
 import CardImage from "../components/CardImage";
+import { AnimatePresence } from "framer-motion";
+import Modal from "../components/ui/modal";
+import { initialStore } from "../store/store";
 const SchoolSlider=()=>{
-   
+    const showCard=initialStore((state)=>state.showCard)
 
     
     return (
         <>
        
-        
+       <AnimatePresence>{showCard && <Modal/>}</AnimatePresence>
         <section className="mt-10 flex flex-col md:flex-row gap-5 items-center justify-center">
             <div className="w-[100%] md:w-[80%] max-sm:w-[90%]">
                 <Swiper
