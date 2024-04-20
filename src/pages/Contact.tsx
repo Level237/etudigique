@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import emailjs from 'emailjs-com';
-const  Contact=(props)=> {
+import { Helmet } from 'react-helmet';
+const  Contact=()=> {
 
-    useEffect(()=>{
-        document.title=props.title
-    },[])
+    
     const [showMessage,setShowMessage]=useState<boolean>(false);
     const SERVICE_ID = "service_bwhu0oq";
 const TEMPLATE_ID = "template_9oi3gbi";
@@ -26,6 +25,17 @@ const handleOnSubmit = (e) => {
 
   return (
     <>
+    <Helmet>
+  <title>Contact</title>
+  <meta name="description" content="Contactez Etudigique pour tout vos services d'immigration étudiant.
+" />
+<meta property="og:title" content="Contact" />
+  <meta property="og:description" content="Contactez Etudigique pour tout vos services d'immigration étudiant" />
+  <meta property="og:image" content="/campus.jpg" />
+  <meta property="og:url" content="etudigique.com/contactez-nous" />
+  <meta property="og:type" content="website" />
+
+</Helmet>
     <section className="bg-[#0000000a]">
     <section  className={`relative h-[70vh] bg-center max-sm:mb-10  bg-cover bg-[url('assets/img/admission/admission.jpg')] mb-40`}>
         <div  className="flex items-center justify-center absolute inset-0 bg-[#121533]  w-100 opacity-[0.8]">

@@ -36,7 +36,7 @@ export const routes=createBrowserRouter([
                 element:<About title="A propos de Nous"/>
             }, {
                 path:"contactez-nous",
-                element:<Contact title="Contactez nous"/>
+                element:<Contact/>
             }, {
                 path:"témoignages",
                 element:<Testimonial/>
