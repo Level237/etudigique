@@ -1,7 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import emailjs from 'emailjs-com';
-const  Contact=()=> {
+const  Contact=(props)=> {
 
+    useEffect(()=>{
+        document.title=props.title
+    },[])
     const [showMessage,setShowMessage]=useState<boolean>(false);
     const SERVICE_ID = "service_bwhu0oq";
 const TEMPLATE_ID = "template_9oi3gbi";

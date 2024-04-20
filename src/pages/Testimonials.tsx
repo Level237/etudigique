@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 
 
-const Testimonial=()=>{
+const Testimonial=(props)=>{
 
+    useEffect(()=>{
+        document.title=props.title
+    },[])
     return (
         <>
         <section className="bg-white dark:bg-gray-900">

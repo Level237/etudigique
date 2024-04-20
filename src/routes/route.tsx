@@ -17,7 +17,7 @@ export const routes=createBrowserRouter([
         children:[
             {
                 path:'',
-                element:<Homepage/>
+                element:<Homepage title="Etudigique"/>
             },{
                 path:'equivalence-de-diplome',
                 element:<Equivalence title="Equivalence de diplome"/>
@@ -33,13 +33,13 @@ export const routes=createBrowserRouter([
             },
             {
                 path:"a-propos-de-nous",
-                element:<About/>
+                element:<About title="A propos de Nous"/>
             }, {
                 path:"contactez-nous",
-                element:<Contact/>
+                element:<Contact title="Contactez nous"/>
             }, {
                 path:"témoignages",
-                element:<Testimonial/>
+                element:<Testimonial title="Témoignages"/>
             }
         ]
        

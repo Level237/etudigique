@@ -20,7 +20,7 @@ import animationDataCircle from "../assets/loties/gradient.json"
 
 import {FreeMode,Pagination} from "swiper/modules"
 import { Link } from "react-router-dom";
-const Homepage=()=> {
+const Homepage=(props)=> {
   
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const viewRef=useRef<any>(null)
@@ -47,7 +47,7 @@ const Homepage=()=> {
         })
         containerCircle.current=null
         container.current=null;
-       
+        document.title=props.title
       },[])
     
   return (

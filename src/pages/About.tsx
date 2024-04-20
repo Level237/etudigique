@@ -7,7 +7,7 @@ import img2 from "../assets/img/about/about1.jpg"
 import img3 from "../assets/img/admission/admission6.jpg"
 import Button from "../components/ui/button";
 
-const About=()=>{
+const About=(props)=>{
     const container = useRef(null); 
     useEffect(()=>{
         
@@ -21,7 +21,7 @@ const About=()=>{
         
         container.current=null
         
-       
+        document.title=props.title
       },[])
     return (
         <>
