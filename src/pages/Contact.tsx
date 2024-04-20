@@ -1,6 +1,23 @@
 import React from 'react'
-
+import emailjs from 'emailjs-com';
 const  Contact=()=> {
+    const SERVICE_ID = "aJwnIQli5p9p7DRK4VXXF";
+const TEMPLATE_ID = "template_1fq17wq";
+const PUBLIC_KEY = "QwNvfT3Vx-pl8jKkv";
+
+const handleOnSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+      .then((result) => {
+        console.log(result.text);
+        alert('Message Sent Successfully')
+      }, (error) => {
+        console.log(error.text);
+        alert('Something went wrong!')
+      });
+    e.target.reset()
+  };
+
   return (
     <>
     <section className="bg-[#0000000a]">
@@ -18,7 +35,7 @@ const  Contact=()=> {
         <section className='mx-40 pb-40 max-sm:mx-5'>
            
             <div>
-                <form>
+                <form onSubmit={handleOnSubmit}>
     <div className="grid gap-6 mb-6 md:grid-cols-2">
         <div>
             <label htmlFor="first_name" className="block mb-2 text-sm font-medium text-gray-900 ">Nom</label>
