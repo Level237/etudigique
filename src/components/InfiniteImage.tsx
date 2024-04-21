@@ -17,9 +17,6 @@ export default function InfiniteImage(props) {
             repeatType:"loop",
             repeatDelay:0
         }).stop;
-
-
-      
     },[xTranslation,width,duration])
   return (
     <>
