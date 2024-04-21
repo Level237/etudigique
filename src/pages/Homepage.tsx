@@ -13,7 +13,6 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/free-mode'
 import 'swiper/css/effect-fade';
-import boss from "../../src/assets/img/boss.jpg"
 import Lottie from "lottie-web"
 import animationData from "../assets/loties/student.json"
 import animationDataCircle from "../assets/loties/gradient.json"
@@ -321,11 +320,10 @@ const Homepage=()=> {
   <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
     <div className="relative">
       <div className="flex items-center justify-center -space-x-2">
-        <img loading="lazy" width="400" height="400" src={boss} alt="member photo" className="h-8 w-8 rounded-full object-cover"/>
-        <img loading="lazy" width="200" height="200" src={boss} alt="member photo" className="h-12 w-12 rounded-full object-cover"/>
-        <img loading="lazy" width="200" height="200" src={boss} alt="member photo" className="z-10 h-16 w-16 rounded-full object-cover"/>
-        <img loading="lazy" width="200" height="200" src={boss} alt="member photo" className="relative h-12 w-12 rounded-full object-cover"/>
-        <img loading="lazy" width="200" height="200" src={boss} alt="member photo" className="h-8 w-8 rounded-full object-cover"/>
+        <img loading="lazy" width="400" height="400" src="testimonials/testimonial1.png" alt="member photo" className="h-8 w-8 rounded-full object-cover"/>
+        <img loading="lazy" width="200" height="200" src="testimonials/testimonia2.jpg" alt="member photo" className="h-12 w-12 rounded-full object-cover"/>
+        <img loading="lazy" width="200" height="200" src="testimonials/testimonial3.png" alt="member photo" className="z-10 h-16 w-16 rounded-full object-cover"/>
+        <img loading="lazy" width="200" height="200" src="testimonials/testimonial4.jpg" alt="member photo" className="relative h-12 w-12 rounded-full object-cover"/>
       </div>
       <div className="mt-6 m-auto space-y-6 md:w-8/12 lg:w-7/12">
         <h1 className="text-center text-4xl font-bold text-gray-800  md:text-5xl">Commencez l'aventure avec Etudigique</h1>
