@@ -85,7 +85,7 @@ vous ouvre les portes !" />
     <div></div>
     </div>
     <div className='mt-5 flex items-center justify-center'>
-      <Button type="secondary" title="Passez un entretien" link={""} color={""}/>
+      <Button type="secondary" title="Passez un entretien" link={"/contactez-nous"} color={""}/>
     </div>
         </section>
         <section className=" lg:px-[100px] py-[58px] lg:pb-2 justify-center bg-[#cc3333] p-[20px]" >
